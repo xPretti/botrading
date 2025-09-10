@@ -1,0 +1,11 @@
+{
+   "tabWidth": 3,
+   "useTabs": false,
+   "printWidth": 160,
+   "objectWrap": "preserve",
+   "bracketSameLine": false,
+   "singleAttributePerLine": true,
+   "endOfLine": "auto",
+   "semi": true,
+   "singleQuote": true
+}
