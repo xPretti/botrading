@@ -6,18 +6,31 @@ import css from '@eslint/css';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-   {
-      files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-      plugins: { js },
-      extends: ['js/recommended'],
-      languageOptions: { globals: globals.browser },
-   },
-   tseslint.configs.recommended,
-   pluginReact.configs.flat.recommended,
-   {
-      files: ['**/*.css'],
-      plugins: { css },
-      language: 'css/css',
-      extends: ['css/recommended'],
-   },
+  {
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    languageOptions: { globals: globals.browser },
+  },
+  tseslint.configs.recommended,
+  {
+    files: ['**/*.{js,ts,jsx,tsx}'],
+    plugins: { react: pluginReact },
+    extends: [pluginReact.configs.flat.recommended],
+    rules: {
+      // desativa a regra que exige React import
+      'react/react-in-jsx-scope': 'off',
+    },
+    settings: {
+      react: {
+        version: 'detect', // detecta automaticamente a versão do React
+      },
+    },
+  },
+  {
+    files: ['**/*.css'],
+    plugins: { css },
+    language: 'css/css',
+    extends: ['css/recommended'],
+  },
 ]);

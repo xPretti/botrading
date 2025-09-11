@@ -1,0 +1,95 @@
+:root {
+   /* LAYOUT */
+   --sl-page-max-width: 1650px;
+   --sl-page-padding: 90px;
+
+   /* CORES */
+   --sl-color-bg: #1c212a;
+   --sl-color-accent-low: #eb8484;
+   --sl-color-accent: #eb8484;
+   --sl-color-accent-high: #ee6a6a;
+   --sl-color-white: #ffffff;
+   --sl-color-gray-1: #f0f2f6;
+   --sl-color-gray-2: #d1d8e2;
+   --sl-color-gray-3: #a3adbd;
+   --sl-color-gray-4: #6a7587;
+   --sl-color-gray-5: #4d5665;
+   --sl-color-gray-6: #353d4c;
+   --sl-color-gray-7: #252d38;
+   --sl-color-black: #1c212a;
+
+   --sl-color-header-bg: var(--sl-color-black);
+   --sl-color-header-border: var(--sl-color-gray-5);
+   --sl-color-header-text: var(--sl-color-gray-1);
+
+   /* FONTES */
+   --font-family-accent: 'Poppins', sans-serif;
+   --font-family-base: 'Inter', sans-serif;
+
+   --font-size-verysmall: 0.75rem;
+   --font-size-small: 0.875rem;
+   --font-size-base: 1rem;
+   --font-size-medium: 1.125rem;
+   --font-size-large: 1.25rem;
+   --font-size-xlarge: 1.5rem;
+   --font-size-xxlarge: 2rem;
+   --font-size-xxxlarge: 2.5rem;
+   --font-size-xxxxlarge: 3rem;
+}
+
+/**
+ * RESET
+ */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * ESTILOS GERAIS
+ */
+body {
+   background-color: var(--sl-color-bg);
+}
+
+img {
+   user-select: none;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--font-family-base);
+   color: var(--sl-color-white);
+}
+
+p {
+   font-size: var(--font-size-base);
+}
+
+h1 {
+   font-size: var(--font-size-xxxxlarge);
+}
+h2 {
+   font-size: var(--font-size-xxxlarge);
+}
+h3 {
+   font-size: var(--font-size-xxlarge);
+}
+h4 {
+   font-size: var(--font-size-xlarge);
+}
+h5 {
+   font-size: var(--font-size-large);
+}
+h6 {
+   font-size: var(--font-size-medium);
+}
