@@ -1,0 +1,97 @@
+/**
+ * Cabeçalho
+*/
+.header {
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: color-mix(in srgb, var(--sl-color-header-bg) 90%, transparent 10%);
+   border-bottom: 1px solid var(--sl-color-header-border);
+   backdrop-filter: blur(3px);
+   padding: 0 var(--sl-page-padding);
+   min-height: 80px;
+}
+
+/**
+ * Conteudo do cabeçalho
+*/
+.headerContent {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   max-width: var(--sl-page-max-width);
+   gap: 1.5625rem;
+}
+
+/**
+ * Conteudo da esquerda
+*/
+.headerLeft {
+   /* text-decoration: none; */
+}
+
+/* Logo */
+.headerLogo {
+   display: flex;
+   align-items: center;
+   gap: 0.9375rem;
+   text-decoration: none;
+}
+
+.headerLogo img {
+   height: 4.0625rem;
+   padding: 0.9375rem 0;
+}
+
+.headerLogo p {
+   font-family: var(--font-family-accent);
+   font-size: var(--font-size-xlarge);
+   font-weight: 600;
+   letter-spacing: 0.0625rem;
+   color: var(--sl-color-header-text);
+}
+
+/**
+ * Conteudo do centro
+*/
+.headerCenter {
+   display: flex;
+   flex-grow: 2;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Navigation */
+.headerNav {
+   display: flex;
+   gap: 0.3125rem;
+}
+.headerNav a {
+   text-decoration: none;
+   padding: 0.625rem 1.25rem;
+   border-radius: 8px;
+}
+.headerNav a:hover {
+   background-color: var(--sl-color-gray-6);
+}
+
+/**
+ * Conteudo do direita
+*/
+.headerRight {
+   display: flex;
+   flex-grow: 1;
+}
+
+/* Tema */
+.headerTheme {
+   cursor: pointer;
+   color: var(--sl-color-gray-1);
+}

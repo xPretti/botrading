@@ -1,6 +1,6 @@
 :root {
    /* LAYOUT */
-   --sl-page-max-width: 1650px;
+   --sl-page-max-width: 1500px;
    --sl-page-padding: 90px;
 
    /* CORES */
@@ -18,7 +18,7 @@
    --sl-color-gray-7: #252d38;
    --sl-color-black: #1c212a;
 
-   --sl-color-header-bg: var(--sl-color-black);
+   --sl-color-header-bg: #1b2028;
    --sl-color-header-border: var(--sl-color-gray-5);
    --sl-color-header-text: var(--sl-color-gray-1);
 
