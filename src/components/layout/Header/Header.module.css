@@ -87,11 +87,16 @@
 */
 .headerRight {
    display: flex;
+   justify-content: flex-end;
+   align-items: center;
    flex-grow: 1;
 }
 
 /* Tema */
 .headerTheme {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    cursor: pointer;
    color: var(--sl-color-gray-1);
 }

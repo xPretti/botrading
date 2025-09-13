@@ -1,4 +1,5 @@
-import { Sun } from "lucide-react";
+
+import ThemeToggle from "../../common/ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
 
 
@@ -21,7 +22,7 @@ export default function Header() {
                 </div>
                 <div className={styles.headerRight}>
                     <div className={styles.headerTheme}>
-                        <Sun />
+                        <ThemeToggle />
                     </div>
                 </div>
             </div>

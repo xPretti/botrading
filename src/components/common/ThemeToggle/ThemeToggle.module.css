@@ -1,0 +1,14 @@
+.themeToggle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   background: transparent;
+   cursor: pointer;
+   font-size: var(--font-size-xlarge);
+   color: var(--sl-color-gray-1);
+}
+
+.themeToggle:hover {
+   color: var(--sl-color-accent-high);
+}
