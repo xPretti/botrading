@@ -6,6 +6,7 @@
    justify-content: center;
    align-items: center;
    border-radius: 8px;
+   user-select: none;
 }
 
 .navLinkMenu:hover {
@@ -86,6 +87,6 @@
    transition: transform 0.2s ease-in-out;
 }
 
-.navLinkMenu:hover .navLinkIcon {
+.navLinkMenu:hover .navLinkMenuTrigger[data-state='open'] .navLinkIcon {
    transform: rotate(180deg);
 }
