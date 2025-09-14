@@ -1,0 +1,91 @@
+/**
+ * Menu
+*/
+.navLinkMenu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+}
+
+.navLinkMenu:hover {
+   background-color: var(--sl-color-gray-7);
+}
+
+/**
+ * Conteudo
+*/
+.navLinkMenuItems {
+   --sl-local-distance: 10px;
+   position: relative;
+   padding-top: var(--sl-local-distance);
+   z-index: 1;
+}
+
+.navLinkMenuItemsArrow {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background-color: var(--sl-color-header-border);
+   border-radius: 50%;
+   top: calc(var(--sl-local-distance) / 2);
+   right: 50%;
+   z-index: 0;
+}
+
+.navLinkMenuItemsContent {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 0.5rem;
+   padding: 15px;
+   background-color: var(--sl-color-bg);
+   border: 1px solid var(--sl-color-header-border);
+   box-shadow: var(--sl-inner-shadow);
+   box-shadow: var(--sl-drop-shadow);
+   border-radius: 8px;
+   min-width: 330px;
+   z-index: 1;
+}
+
+.navLinkMenuItemsContentTitle {
+   font-size: var(--font-size-small);
+   color: var(--sl-color-gray-2);
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+/**
+ * Item de trigger
+*/
+.navLinkMenuTrigger {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   height: fit-content;
+   padding: 0.625rem 1rem;
+   gap: 0.1875rem;
+}
+/* Item */
+.navLink {
+   text-decoration: none;
+   font-size: var(--font-size-base);
+}
+
+/* Icon */
+.navLinkIcon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--sl-color-gray-1);
+   width: var(--font-size-base);
+   height: var(--font-size-base);
+   transition: transform 0.2s ease-in-out;
+}
+
+.navLinkMenu:hover .navLinkIcon {
+   transform: rotate(180deg);
+}

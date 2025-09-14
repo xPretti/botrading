@@ -1,0 +1,57 @@
+/**
+ * Container
+*/
+.navLinkMenuItem {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   gap: 0.625rem;
+   background-color: var(--sl-color-bg);
+   border: 1px solid var(--sl-color-gray-6);
+   border-radius: 10px;
+   padding: 0.625rem;
+   cursor: pointer;
+   text-decoration: none;
+   box-shadow: var(--sl-inner-shadow);
+   box-shadow: var(--sl-drop-shadow);
+}
+
+.navLinkMenuItem:hover {
+   background-color: var(--sl-color-gray-7);
+}
+
+/**
+ * Items
+*/
+/* icon */
+.navLinkMenuItemIcon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--sl-color-white);
+   width: 20px;
+}
+
+/* title and description */
+.navLinkMenuItemContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 0.25rem;
+}
+
+/* title */
+.navLinkMenuItemTitle {
+   font-size: var(--font-size-base);
+   color: var(--sl-color-white);
+   font-weight: 600;
+}
+
+/* description */
+.navLinkMenuItemDesc {
+   font-size: var(--font-size-small);
+   color: var(--sl-color-gray-2);
+   font-weight: 400;
+}

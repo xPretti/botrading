@@ -16,6 +16,7 @@
    backdrop-filter: blur(3px);
    padding: 0 var(--sl-page-padding);
    min-height: 80px;
+   box-shadow: var(--sl-drop-shadow);
 }
 
 /**
@@ -71,15 +72,9 @@
 /* Navigation */
 .headerNav {
    display: flex;
+   justify-content: center;
+   align-items: center;
    gap: 0.3125rem;
-}
-.headerNav a {
-   text-decoration: none;
-   padding: 0.625rem 1.25rem;
-   border-radius: 8px;
-}
-.headerNav a:hover {
-   background-color: var(--sl-color-gray-6);
 }
 
 /**

@@ -1,0 +1,13 @@
+.navLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   height: fit-content;
+   padding: 0.625rem 1rem;
+   border-radius: 8px;
+   font-size: var(--font-size-base);
+}
+.navLink:hover {
+   background-color: var(--sl-color-gray-7);
+}

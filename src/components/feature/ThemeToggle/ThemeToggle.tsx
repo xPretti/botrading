@@ -5,11 +5,11 @@ import { THEME } from "../../../constants/theme-constant";
 
 
 export default function ThemeToggle() {
-    const { theme, toggleTheme } = useTheme();
+   const { theme, toggleTheme } = useTheme();
 
-    return (
-        <button className={styles.themeToggle} onClick={toggleTheme}>
-            {theme == THEME.LIGHT ? <Sun /> : <Moon />}
-        </button>
-    );
+   return (
+      <button className={styles.themeToggle} onClick={toggleTheme}>
+         {theme == THEME.LIGHT ? <Sun /> : <Moon />}
+      </button>
+   );
 }
