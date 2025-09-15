@@ -45,8 +45,8 @@
 }
 
 .headerLogo p {
-   font-family: var(--font-family-accent);
-   font-size: var(--font-size-xlarge);
+   font-family: var(--sl-font-family-accent);
+   font-size: var(--sl-font-size-xlarge);
    font-weight: 600;
    letter-spacing: 0.0625rem;
    color: var(--sl-color-header-text);

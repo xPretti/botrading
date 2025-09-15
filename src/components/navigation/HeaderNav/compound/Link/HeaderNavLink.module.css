@@ -6,7 +6,7 @@
    height: fit-content;
    padding: 0.625rem 1rem;
    border-radius: 8px;
-   font-size: var(--font-size-base);
+   font-size: var(--sl-font-size-base);
    text-wrap: nowrap;
 }
 .headerNavLink:hover {

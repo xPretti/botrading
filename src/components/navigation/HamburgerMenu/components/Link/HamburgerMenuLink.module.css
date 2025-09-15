@@ -1,0 +1,21 @@
+.menuLink {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 0.75rem;
+   margin-left: 0.625rem;
+}
+
+.linkIcon {
+   display: flex;
+   width: 1.5625rem;
+   height: 1.5625rem;
+   color: var(--sl-color-gray-1);
+}
+
+.linkTitle {
+   font-size: var(--sl-font-size-medium);
+   font-weight: 500;
+   color: var(--sl-color-white);
+   text-decoration: none;
+}

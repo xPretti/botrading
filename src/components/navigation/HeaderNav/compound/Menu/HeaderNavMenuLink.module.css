@@ -44,14 +44,14 @@
 
 /* title */
 .headerNavMenuLinkTitle {
-   font-size: var(--font-size-base);
+   font-size: var(--sl-font-size-base);
    color: var(--sl-color-white);
    font-weight: 600;
 }
 
 /* description */
 .headerNavMenuLinkDesc {
-   font-size: var(--font-size-small);
+   font-size: var(--sl-font-size-small);
    color: var(--sl-color-gray-2);
    font-weight: 400;
    text-wrap: nowrap;

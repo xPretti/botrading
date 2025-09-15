@@ -3,9 +3,9 @@ import { ThemeToggle } from "../../feature/ThemeToggle";
 
 import styles from "./Header.module.css";
 import { DEVICE } from "../../../types/device.type";
-import { HeaderMenu } from "./content/HeaderMenu";
 import { HeaderNav } from "../../navigation/HeaderNav";
 import { Bot } from "lucide-react";
+import { HamburgerMenu } from "../../navigation/HamburgerMenu";
 
 export function Header() {
    const device = useDevice();
@@ -33,7 +33,7 @@ export function Header() {
             </div>}
             <div className={styles.headerRight}>
                {isMobile
-                  ? <HeaderMenu />
+                  ? <HamburgerMenu ><p>item 1</p></HamburgerMenu>
                   : <ThemeToggle />}
             </div>
          </div>
