@@ -1,7 +1,7 @@
 /**
  * Container
 */
-.navLinkMenuItem {
+.headerNavMenuLink {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -17,7 +17,7 @@
    box-shadow: var(--sl-drop-shadow);
 }
 
-.navLinkMenuItem:hover {
+.headerNavMenuLink:hover {
    background-color: var(--sl-color-gray-7);
 }
 
@@ -25,7 +25,7 @@
  * Items
 */
 /* icon */
-.navLinkMenuItemIcon {
+.headerNavMenuLinkIcon {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -34,7 +34,7 @@
 }
 
 /* title and description */
-.navLinkMenuItemContent {
+.headerNavMenuLinkContent {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -43,15 +43,16 @@
 }
 
 /* title */
-.navLinkMenuItemTitle {
+.headerNavMenuLinkTitle {
    font-size: var(--font-size-base);
    color: var(--sl-color-white);
    font-weight: 600;
 }
 
 /* description */
-.navLinkMenuItemDesc {
+.headerNavMenuLinkDesc {
    font-size: var(--font-size-small);
    color: var(--sl-color-gray-2);
    font-weight: 400;
+   text-wrap: nowrap;
 }

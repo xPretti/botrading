@@ -1,4 +1,4 @@
-.navLink {
+.headerNavLink {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -9,6 +9,6 @@
    font-size: var(--font-size-base);
    text-wrap: nowrap;
 }
-.navLink:hover {
+.headerNavLink:hover {
    background-color: var(--sl-color-gray-7);
 }
