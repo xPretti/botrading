@@ -7,6 +7,7 @@
    padding: 0.625rem 1rem;
    border-radius: 8px;
    font-size: var(--font-size-base);
+   text-wrap: nowrap;
 }
 .navLink:hover {
    background-color: var(--sl-color-gray-7);

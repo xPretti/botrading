@@ -1,1 +1,3 @@
-export { default as NavLink, default as NavLinkMenu, default as NavLinkMenuItem } from './NavLink';
+export * from './NavLink/NavLink';
+export * from './NavLinkMenu/NavLinkMenu';
+export * from './NavLinkMenu/Compound/NavLinkMenuItem';

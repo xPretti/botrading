@@ -5,7 +5,7 @@ export interface NavLinkProps {
    href: string;
 }
 
-export default function NavLink({ text, href }: NavLinkProps) {
+export function NavLink({ text, href }: NavLinkProps) {
    return (
       <a className={styles.navLink} href={href}>
          <span>{text}</span>

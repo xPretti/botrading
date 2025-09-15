@@ -7,7 +7,7 @@ interface NavLinkMenuItemProps {
    icon?: React.ReactNode;
 };
 
-export default function NavLinkMenuItem({ href, title, desc, icon }: NavLinkMenuItemProps) {
+export function NavLinkMenuItem({ href, title, desc, icon }: NavLinkMenuItemProps) {
    return (
       <a className={styles.navLinkMenuItem} href={href}>
          {icon &&

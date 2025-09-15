@@ -2,6 +2,7 @@ import { HoverCard } from "radix-ui";
 import styles from "./NavLinkMenu.module.css";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { NavLinkMenuItem } from "./Compound/NavLinkMenuItem";
 
 export interface NavLinkMenuProps {
 	text: string;
@@ -9,7 +10,7 @@ export interface NavLinkMenuProps {
 	children: React.ReactNode;
 }
 
-export default function NavLinkMenu({ text, children }: NavLinkMenuProps) {
+export function NavLinkMenu({ text, children }: NavLinkMenuProps) {
 	const [open, setOpen] = useState(false);
 
 	const handleClickMain = () => {
@@ -52,3 +53,8 @@ export default function NavLinkMenu({ text, children }: NavLinkMenuProps) {
 		</div>
 	);
 }
+
+/**
+ * Sub components
+ */
+NavLinkMenu.Item = NavLinkMenuItem;
