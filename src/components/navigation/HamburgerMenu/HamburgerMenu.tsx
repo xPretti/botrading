@@ -3,7 +3,7 @@ import styles from "./HamburgerMenu.module.css";
 import { HomeIcon, Menu, X } from "lucide-react";
 import { ThemeToggle } from "../../feature/ThemeToggle";
 import { useEffect, useState } from "react";
-import { HamburgerMenuLink } from "./components";
+import { HamburgerMenuAccordion, HamburgerMenuDivider, HamburgerMenuLink } from "./components";
 
 interface HamburgerMenuProps {
    children?: React.ReactNode;
@@ -39,10 +39,7 @@ export function HamburgerMenu({ children }: HamburgerMenuProps) {
                      </Dialog.Close>
                   </div>
                   <nav className={styles.menuContentBody}>
-                     <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
-                     <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
-                     <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
-                     <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
+                     {children}
                   </nav>
                   <div className={styles.menuContentFooter}>
                      <ThemeToggle />
@@ -59,3 +56,5 @@ export function HamburgerMenu({ children }: HamburgerMenuProps) {
  * Subcomponents
  */
 HamburgerMenu.Link = HamburgerMenuLink;
+HamburgerMenu.Accordion = HamburgerMenuAccordion;
+HamburgerMenu.Divider = HamburgerMenuDivider;

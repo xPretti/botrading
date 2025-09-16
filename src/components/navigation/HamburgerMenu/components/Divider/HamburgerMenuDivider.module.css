@@ -1,0 +1,4 @@
+.menuDivider {
+   width: 100%;
+   background-color: var(--sl-color-header-border);
+}

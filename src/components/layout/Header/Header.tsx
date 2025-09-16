@@ -4,7 +4,7 @@ import { ThemeToggle } from "../../feature/ThemeToggle";
 import styles from "./Header.module.css";
 import { DEVICE } from "../../../types/device.type";
 import { HeaderNav } from "../../navigation/HeaderNav";
-import { Bot } from "lucide-react";
+import { Bot, Headset, HomeIcon, Lightbulb } from "lucide-react";
 import { HamburgerMenu } from "../../navigation/HamburgerMenu";
 
 export function Header() {
@@ -33,7 +33,16 @@ export function Header() {
             </div>}
             <div className={styles.headerRight}>
                {isMobile
-                  ? <HamburgerMenu ><p>item 1</p></HamburgerMenu>
+                  ? <HamburgerMenu >
+                     <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
+                     <HamburgerMenu.Divider />
+                     <HamburgerMenu.Accordion title="Soluções" icon={<Lightbulb />}>
+                        <HamburgerMenu.Link title="ScriptBot" href="/solucoes/scriptbot" />
+                        <HamburgerMenu.Link title="Ver mais" href="/solucoes" />
+                     </HamburgerMenu.Accordion>
+                     <HamburgerMenu.Divider />
+                     <HamburgerMenu.Link title="Central de Suporte" href="/suporte" icon={<Headset />} />
+                  </HamburgerMenu>
                   : <ThemeToggle />}
             </div>
          </div>

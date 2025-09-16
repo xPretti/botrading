@@ -8,11 +8,11 @@ interface HamburgerMenuLinkProps {
 
 export function HamburgerMenuLink({ icon, title, href }: HamburgerMenuLinkProps) {
    return (
-      <div className={styles.menuLink}>
+      <a href={href} className={styles.menuLink}>
          {icon && <div className={styles.linkIcon}>{icon}</div>}
-         <a href={href} className={styles.linkTitle}>
+         <div className={styles.linkTitle}>
             {title}
-         </a>
-      </div>
+         </div>
+      </a>
    );
 }

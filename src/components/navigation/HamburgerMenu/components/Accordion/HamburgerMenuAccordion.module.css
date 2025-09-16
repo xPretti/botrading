@@ -1,0 +1,74 @@
+.menuAccordionItem {
+   border-bottom: 1px solid var(--border-color);
+}
+
+.menuAccordionItem,
+.menuAccordionTrigger,
+.menuAccordionHeader {
+   width: 100%;
+}
+
+.menuAccordionHeader {
+   position: relative;
+   z-index: 10;
+}
+.menuAccordionItem[data-state='open'] .menuAccordionHeader {
+   box-shadow: var(--sl-drop-shadow);
+}
+
+.menuAccordionTrigger {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: var(--sl-color-white);
+   padding: 0.625rem;
+}
+
+.menuAccordionTitleWrapper {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.menuAccordionIcon {
+   display: flex;
+   width: 1.5625rem;
+   height: 1.5625rem;
+   color: var(--sl-color-gray-1);
+}
+
+.menuAccordionTitle {
+   font-size: var(--sl-font-size-medium);
+   font-weight: 500;
+   color: var(--sl-color-white);
+   text-decoration: none;
+}
+
+.menuAccordionIndicatorWrapper {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+.menuAccordionIndicatorDivider {
+   width: 1px;
+   height: 1.5rem;
+   background-color: var(--sl-color-header-border);
+}
+.menuAccordionItem[data-state='open'] .menuAccordionIndicator {
+   transform: rotate(180deg);
+   transition: transform 0.2s ease-in-out;
+}
+.menuAccordionIndicator {
+   display: flex;
+   color: var(--sl-color-gray-1);
+   width: 1.5rem;
+   height: 1.5rem;
+}
+
+.menuAccordionContent {
+   border-left: 1px solid var(--sl-color-gray-7);
+   background-color: var(--sl-color-gray-8);
+}
