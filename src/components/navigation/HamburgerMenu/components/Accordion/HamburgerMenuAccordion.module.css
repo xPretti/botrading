@@ -42,7 +42,7 @@
 
 .menuAccordionTitle {
    font-size: var(--sl-font-size-medium);
-   font-weight: 500;
+   font-weight: 300;
    color: var(--sl-color-white);
    text-decoration: none;
 }

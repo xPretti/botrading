@@ -5,13 +5,13 @@ export const THEME = {
 
 export type Theme = (typeof THEME)[keyof typeof THEME];
 
-export interface ThemeContextType {
+export interface IThemeContextType {
    theme: Theme;
    toggleTheme: () => void;
    setTheme: (theme: Theme) => void;
 }
 
-export interface ThemeProviderProps {
+export interface IThemeProviderProps {
    children: React.ReactNode;
    defaultTheme?: Theme;
 }

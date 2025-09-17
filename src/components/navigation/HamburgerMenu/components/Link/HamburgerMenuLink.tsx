@@ -1,18 +1,18 @@
 import styles from "./HamburgerMenuLink.module.css";
 
-interface HamburgerMenuLinkProps {
+interface IHamburgerMenuLinkProps {
    icon?: React.ReactNode;
    title: string;
    href: string;
 }
 
-export function HamburgerMenuLink({ icon, title, href }: HamburgerMenuLinkProps) {
+export function HamburgerMenuLink({ icon, title, href }: IHamburgerMenuLinkProps) {
    return (
       <a href={href} className={styles.menuLink}>
          {icon && <div className={styles.linkIcon}>{icon}</div>}
-         <div className={styles.linkTitle}>
+         <p className={styles.linkTitle}>
             {title}
-         </div>
+         </p>
       </a>
    );
 }

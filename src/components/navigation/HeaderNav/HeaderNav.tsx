@@ -3,11 +3,11 @@ import styles from "./HeaderNav.module.css";
 import { HeaderNavLink, HeaderNavMenu, HeaderNavMenuLink } from "./compound";
 
 
-export interface HeaderNavProps {
+export interface IHeaderNavProps {
    children: React.ReactNode;
 }
 
-export function HeaderNav({ children }: HeaderNavProps) {
+export function HeaderNav({ children }: IHeaderNavProps) {
    return (
       <NavigationMenu.Root className={styles.headerNav}>
          <NavigationMenu.List className={styles.headerNavItems}>

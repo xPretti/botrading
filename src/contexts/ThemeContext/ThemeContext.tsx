@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { THEME, type Theme, type ThemeContextType, type ThemeProviderProps } from '../../types/theme-type';
+import { THEME, type Theme, type IThemeContextType, type IThemeProviderProps } from '../../types/theme-type';
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<IThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children, defaultTheme = THEME.LIGHT }: ThemeProviderProps) {
+export function ThemeProvider({ children, defaultTheme = THEME.LIGHT }: IThemeProviderProps) {
     const [theme, setThemeState] = useState<Theme>(defaultTheme);
 
     useEffect(() => {
@@ -30,7 +30,7 @@ export function ThemeProvider({ children, defaultTheme = THEME.LIGHT }: ThemePro
         setTheme(newTheme);
     };
 
-    const value: ThemeContextType = {
+    const value: IThemeContextType = {
         theme,
         toggleTheme,
         setTheme
@@ -43,7 +43,7 @@ export function ThemeProvider({ children, defaultTheme = THEME.LIGHT }: ThemePro
     );
 };
 
-export const useThemeContext = (): ThemeContextType => {
+export const useThemeContext = (): IThemeContextType => {
     const context = useContext(ThemeContext);
     if (context === undefined) {
         throw new Error('useThemeContext deve ser usado dentro de um ThemeProvider');

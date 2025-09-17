@@ -14,7 +14,7 @@
 /**
  * Conteudo do menu
 */
-.menuBackground {
+.menuDialog {
    position: absolute;
    left: 0;
    top: 0;
@@ -33,6 +33,21 @@
    background-color: var(--sl-color-header-bg);
    box-shadow: var(--sl-drop-shadow);
    border-right: 1px solid var(--sl-color-header-border);
+
+   /* animation: fadeInUp 0.2s ease forwards; */
+}
+
+.menuDialog[data-state='open'] .menuContent {
+   animation: contentShow 0.2s ease forwards;
+}
+
+@keyframes contentShow {
+   from {
+      transform: translateX(-100%);
+   }
+   to {
+      transform: translateX(0);
+   }
 }
 
 /* Header */

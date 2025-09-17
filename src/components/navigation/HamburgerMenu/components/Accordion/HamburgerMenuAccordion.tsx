@@ -2,13 +2,13 @@ import { Accordion } from "radix-ui";
 import styles from "./HamburgerMenuAccordion.module.css";
 import { ChevronDownIcon } from "lucide-react";
 
-interface HamburgerMenuAccordionProps {
+interface IHamburgerMenuAccordionProps {
    icon?: React.ReactNode;
    title: string;
    children: React.ReactNode;
 }
 
-export function HamburgerMenuAccordion({ icon, title, children }: HamburgerMenuAccordionProps) {
+export function HamburgerMenuAccordion({ icon, title, children }: IHamburgerMenuAccordionProps) {
    return (
       <Accordion.Root
          className={styles.menuAccordion}

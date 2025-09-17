@@ -185,7 +185,7 @@
  * Inter
  */
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Regular.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Regular.woff') format('woff');
@@ -195,7 +195,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-SemiBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-SemiBold.woff') format('woff');
@@ -205,7 +205,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-ThinItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-ThinItalic.woff') format('woff');
@@ -215,7 +215,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Thin.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Thin.woff') format('woff');
@@ -225,7 +225,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-MediumItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-MediumItalic.woff') format('woff');
@@ -235,7 +235,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-SemiBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-SemiBoldItalic.woff') format('woff');
@@ -245,7 +245,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Black.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Black.woff') format('woff');
@@ -255,7 +255,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-BlackItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-BlackItalic.woff') format('woff');
@@ -265,7 +265,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-ExtraBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-ExtraBold.woff') format('woff');
@@ -275,7 +275,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-BoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-BoldItalic.woff') format('woff');
@@ -285,7 +285,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-ExtraBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-ExtraBoldItalic.woff') format('woff');
@@ -295,7 +295,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Bold.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Bold.woff') format('woff');
@@ -305,7 +305,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Italic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Italic.woff') format('woff');
@@ -315,7 +315,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Light.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Light.woff') format('woff');
@@ -325,7 +325,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Medium.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Medium.woff') format('woff');
@@ -335,7 +335,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-ExtraLight.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-ExtraLight.woff') format('woff');
@@ -345,7 +345,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-LightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-LightItalic.woff') format('woff');
@@ -355,7 +355,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-ExtraLightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-ExtraLightItalic.woff') format('woff');
@@ -365,7 +365,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-SemiBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-SemiBoldItalic.woff') format('woff');
@@ -375,7 +375,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Regular.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Regular.woff') format('woff');
@@ -385,7 +385,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-MediumItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-MediumItalic.woff') format('woff');
@@ -395,7 +395,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-SemiBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-SemiBold.woff') format('woff');
@@ -405,7 +405,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-Thin.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-Thin.woff') format('woff');
@@ -415,7 +415,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 28pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter28pt-ThinItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter28pt-ThinItalic.woff') format('woff');
@@ -425,7 +425,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-BlackItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-BlackItalic.woff') format('woff');
@@ -435,7 +435,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Bold.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Bold.woff') format('woff');
@@ -445,7 +445,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Black.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Black.woff') format('woff');
@@ -455,7 +455,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-ExtraBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-ExtraBold.woff') format('woff');
@@ -465,7 +465,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-BoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-BoldItalic.woff') format('woff');
@@ -475,7 +475,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-ExtraLightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-ExtraLightItalic.woff') format('woff');
@@ -485,7 +485,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-ExtraLight.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-ExtraLight.woff') format('woff');
@@ -495,7 +495,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-ExtraBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-ExtraBoldItalic.woff') format('woff');
@@ -505,7 +505,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Italic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Italic.woff') format('woff');
@@ -515,7 +515,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Light.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Light.woff') format('woff');
@@ -525,7 +525,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Regular.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Regular.woff') format('woff');
@@ -535,7 +535,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-SemiBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-SemiBold.woff') format('woff');
@@ -545,7 +545,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-MediumItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-MediumItalic.woff') format('woff');
@@ -555,7 +555,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Medium.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Medium.woff') format('woff');
@@ -565,7 +565,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-LightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-LightItalic.woff') format('woff');
@@ -575,7 +575,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-Thin.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-Thin.woff') format('woff');
@@ -585,7 +585,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Bold.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Bold.woff') format('woff');
@@ -595,7 +595,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-SemiBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-SemiBoldItalic.woff') format('woff');
@@ -605,7 +605,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Black.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Black.woff') format('woff');
@@ -615,7 +615,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 18pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter18pt-ThinItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter18pt-ThinItalic.woff') format('woff');
@@ -625,7 +625,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-BlackItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-BlackItalic.woff') format('woff');
@@ -635,7 +635,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-ExtraLightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-ExtraLightItalic.woff') format('woff');
@@ -645,7 +645,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-BoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-BoldItalic.woff') format('woff');
@@ -655,7 +655,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-ExtraLight.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-ExtraLight.woff') format('woff');
@@ -665,7 +665,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-ExtraBold.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-ExtraBold.woff') format('woff');
@@ -675,7 +675,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-ExtraBoldItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-ExtraBoldItalic.woff') format('woff');
@@ -685,7 +685,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Italic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Italic.woff') format('woff');
@@ -695,7 +695,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Light.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Light.woff') format('woff');
@@ -705,7 +705,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-LightItalic.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-LightItalic.woff') format('woff');
@@ -715,7 +715,7 @@
 }
 
 @font-face {
-   font-family: 'Inter 24pt';
+   font-family: 'Inter';
    src:
       url('/fonts/Inter/Inter24pt-Medium.woff2') format('woff2'),
       url('/fonts/Inter/Inter24pt-Medium.woff') format('woff');

@@ -1,15 +1,15 @@
 import { Dialog } from "radix-ui";
 import styles from "./HamburgerMenu.module.css";
-import { HomeIcon, Menu, X } from "lucide-react";
 import { ThemeToggle } from "../../feature/ThemeToggle";
 import { useEffect, useState } from "react";
 import { HamburgerMenuAccordion, HamburgerMenuDivider, HamburgerMenuLink } from "./components";
+import { Menu, X } from "lucide-react";
 
-interface HamburgerMenuProps {
+interface IHamburgerMenuProps {
    children?: React.ReactNode;
 }
 
-export function HamburgerMenu({ children }: HamburgerMenuProps) {
+export function HamburgerMenu({ children }: IHamburgerMenuProps) {
    const [open, setOpen] = useState(false);
 
    useEffect(() => {
@@ -21,6 +21,7 @@ export function HamburgerMenu({ children }: HamburgerMenuProps) {
       };
    }, [open]);
 
+
    return (
       <div className={styles.menu}>
          <Dialog.Root open={open} onOpenChange={setOpen}>
@@ -30,7 +31,7 @@ export function HamburgerMenu({ children }: HamburgerMenuProps) {
                </button>
             </Dialog.Trigger>
 
-            <Dialog.Content className={styles.menuBackground} onClick={() => setOpen(false)}>
+            <Dialog.Content className={styles.menuDialog} onClick={() => setOpen(false)}>
                <div className={styles.menuContent} onClick={(e) => e.stopPropagation()}>
                   <div className={styles.menuContentHeader}>
                      <p className={styles.menuContentHeaderTitle}>Menu</p>
