@@ -1,0 +1,27 @@
+.footerLinks {
+   display: flex;
+   flex-direction: column;
+   gap: 0.625rem;
+}
+
+.footerLinksTitle {
+   font-size: var(--sl-font-size-medium);
+   color: var(--sl-color-white);
+   font-weight: 600;
+}
+
+.footerLinksContent {
+   display: flex;
+   flex-direction: column;
+   gap: 0.325rem;
+}
+
+.footerLinksContent a {
+   font-size: var(--sl-font-size-base);
+   color: var(--sl-color-gray-2);
+   text-decoration: none;
+}
+
+.footerLinksContent a:hover {
+   color: var(--sl-color-accent-high);
+}

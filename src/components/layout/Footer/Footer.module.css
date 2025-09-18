@@ -1,0 +1,116 @@
+/**
+ * Rodapé
+*/
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 90px;
+   padding: 2.1875rem var(--sl-page-padding);
+   border-top: 1px solid var(--sl-color-header-border);
+   box-shadow: var(--sl-upper-shadow);
+   background-color: var(--sl-color-header-bg);
+}
+
+.footer p {
+   text-wrap: nowrap;
+}
+
+/* Area do conteudo */
+.footerContent {
+   width: 100%;
+   /* max-width: var(--sl-page-max-width); */
+   max-width: var(--sl-page-max-width-footer);
+}
+
+/**
+ * Conteudo de cima
+*/
+.footerUpper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 3rem;
+   margin-bottom: 4rem;
+}
+
+/* Esquerda */
+.footerUpperLeft {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+.footerUpperLeftLogo {
+   font-family: var(--sl-font-family-accent);
+   font-size: var(--sl-font-size-xxlarge);
+   font-weight: 600;
+   color: var(--sl-color-accent-high);
+}
+
+.footerUpperLefContent {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+.footerUpperLeftContentText {
+   display: flex;
+   align-items: center;
+   font-size: var(--sl-font-size-medium);
+   font-weight: 300;
+   color: var(--sl-color-white);
+}
+.footerUpperLeftContentHeart {
+   color: var(--sl-color-accent-high);
+   margin: 0 0.3125rem;
+}
+
+.footerUpperLeftContentTech {
+   display: flex;
+   align-items: center;
+   gap: 0.625rem;
+}
+.footerUpperLeftContentTech a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+.footerUpperLeftContentTech a:hover {
+   scale: 1.2;
+}
+
+/* Direita */
+.footerUpperRight {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1rem;
+   width: 100%;
+   max-width: 45rem;
+   overflow: hidden;
+}
+
+/**
+ * Divisor
+*/
+.footerLowerDivider {
+   width: 100%;
+   height: 1px;
+   background-color: var(--sl-color-header-border);
+}
+
+/**
+ * Conteudo de baixo
+*/
+.footerLower {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 3rem;
+   margin-top: 2.1875rem;
+}
+
+.footerLowerText {
+   font-size: var(--sl-font-size-medium);
+   font-weight: 500;
+   color: var(--sl-color-white);
+}
