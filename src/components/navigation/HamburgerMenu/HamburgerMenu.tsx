@@ -2,10 +2,10 @@ import { Dialog } from "radix-ui";
 import styles from "./HamburgerMenu.module.css";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "../../../features/ThemeToggle/ThemeToggle";
 import { Link } from "./compound/Link/Link";
 import { Accordion } from "./compound/Accordion/Accordion";
 import { Divider } from "./compound/Divider/Divider";
+import { ThemeToggle } from "@/features/ThemeToggle/ThemeToggle";
 
 interface IHamburgerMenuProps {
    children?: React.ReactNode;

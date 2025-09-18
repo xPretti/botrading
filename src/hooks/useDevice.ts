@@ -1,5 +1,5 @@
+import { DEVICE, type DeviceType } from '@/types/device-type';
 import { useEffect, useState } from 'react';
-import { DEVICE, type DeviceType } from '../types/device.type';
 
 export const useDevice = () => {
    const [device, setDevice] = useState<DeviceType>(DEVICE.DESKTOP);
