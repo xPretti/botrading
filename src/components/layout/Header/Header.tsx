@@ -1,11 +1,11 @@
 import { useDevice } from "../../../hooks/useDevice";
-import { ThemeToggle } from "../../feature/ThemeToggle";
 
 import styles from "./Header.module.css";
 import { DEVICE } from "../../../types/device.type";
-import { HeaderNav } from "../../navigation/HeaderNav";
 import { Bot, Headset, HomeIcon, Lightbulb } from "lucide-react";
-import { HamburgerMenu } from "../../navigation/HamburgerMenu";
+import { HeaderNav } from "../../navigation/HeaderNav/HeaderNav";
+import { HamburgerMenu } from "../../navigation/HamburgerMenu/HamburgerMenu";
+import { ThemeToggle } from "../../../features/ThemeToggle/ThemeToggle";
 
 export function Header() {
    const device = useDevice();

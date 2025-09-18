@@ -1,9 +1,11 @@
 import { Dialog } from "radix-ui";
 import styles from "./HamburgerMenu.module.css";
-import { ThemeToggle } from "../../feature/ThemeToggle";
 import { useEffect, useState } from "react";
-import { HamburgerMenuAccordion, HamburgerMenuDivider, HamburgerMenuLink } from "./components";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "../../../features/ThemeToggle/ThemeToggle";
+import { Link } from "./compound/Link/Link";
+import { Accordion } from "./compound/Accordion/Accordion";
+import { Divider } from "./compound/Divider/Divider";
 
 interface IHamburgerMenuProps {
    children?: React.ReactNode;
@@ -56,6 +58,6 @@ export function HamburgerMenu({ children }: IHamburgerMenuProps) {
 /**
  * Subcomponents
  */
-HamburgerMenu.Link = HamburgerMenuLink;
-HamburgerMenu.Accordion = HamburgerMenuAccordion;
-HamburgerMenu.Divider = HamburgerMenuDivider;
+HamburgerMenu.Link = Link;
+HamburgerMenu.Accordion = Accordion;
+HamburgerMenu.Divider = Divider;

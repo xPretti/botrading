@@ -1,23 +1,23 @@
-import { Accordion } from "radix-ui";
-import styles from "./HamburgerMenuAccordion.module.css";
+import { Accordion as RadixAccordion } from "radix-ui";
+import styles from "./Accordion.module.css";
 import { ChevronDownIcon } from "lucide-react";
 
-interface IHamburgerMenuAccordionProps {
+interface IAccordionProps {
    icon?: React.ReactNode;
    title: string;
    children: React.ReactNode;
 }
 
-export function HamburgerMenuAccordion({ icon, title, children }: IHamburgerMenuAccordionProps) {
+export function Accordion({ icon, title, children }: IAccordionProps) {
    return (
-      <Accordion.Root
+      <RadixAccordion.Root
          className={styles.menuAccordion}
          type="single"
          collapsible
       >
-         <Accordion.Item className={styles.menuAccordionItem} value="item-1">
-            <Accordion.Header className={styles.menuAccordionHeader}>
-               <Accordion.Trigger className={styles.menuAccordionTrigger}>
+         <RadixAccordion.Item className={styles.menuAccordionItem} value="item-1">
+            <RadixAccordion.Header className={styles.menuAccordionHeader}>
+               <RadixAccordion.Trigger className={styles.menuAccordionTrigger}>
                   <div className={styles.menuAccordionTitleWrapper}>
                      {icon && <div className={styles.menuAccordionIcon}>{icon}</div>}
                      <p className={styles.menuAccordionTitle}>{title}</p>
@@ -28,12 +28,12 @@ export function HamburgerMenuAccordion({ icon, title, children }: IHamburgerMenu
                         <ChevronDownIcon />
                      </div>
                   </div>
-               </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content className={styles.menuAccordionContent}>
+               </RadixAccordion.Trigger>
+            </RadixAccordion.Header>
+            <RadixAccordion.Content className={styles.menuAccordionContent}>
                {children}
-            </Accordion.Content>
-         </Accordion.Item>
-      </Accordion.Root>
+            </RadixAccordion.Content>
+         </RadixAccordion.Item>
+      </RadixAccordion.Root>
    );
 }

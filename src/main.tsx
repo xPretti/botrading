@@ -3,13 +3,10 @@ import { createRoot } from 'react-dom/client';
 
 import './styles/fonts.css';
 import './styles/styles.css';
-import App from './App.tsx';
-import { ThemeProvider } from './contexts/ThemeContext/ThemeContext.tsx';
+import App from './app/App.tsx';
 
 createRoot(document.getElementById('root')!).render(
    <StrictMode>
-      <ThemeProvider>
-         <App />
-      </ThemeProvider>
+      <App />
    </StrictMode>,
 );

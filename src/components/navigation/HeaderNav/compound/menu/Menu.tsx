@@ -1,13 +1,13 @@
 import { NavigationMenu } from "radix-ui";
-import styles from "./HeaderNavMenu.module.css";
+import styles from "./Menu.module.css";
 import { ChevronDown } from "lucide-react";
 
-export interface IHeaderNavMenuProps {
+export interface IMenuProps {
    text: string;
    children: React.ReactNode;
 }
 
-export function HeaderNavMenu({ text, children }: IHeaderNavMenuProps) {
+export function Menu({ text, children }: IMenuProps) {
    return (
       <NavigationMenu.Item className={styles.headerNavItem}>
          <NavigationMenu.Trigger className={styles.headerNavTrigger}>

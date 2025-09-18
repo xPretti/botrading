@@ -1,11 +1,11 @@
-import styles from "./HeaderNavLink.module.css";
+import styles from "./Link.module.css";
 
-interface IHeaderNavLinkProps {
+interface ILinkProps {
    text: string;
    href: string;
 }
 
-export function HeaderNavLink({ text, href }: IHeaderNavLinkProps) {
+export function Link({ text, href }: ILinkProps) {
    return (
       <a className={styles.headerNavLink} href={href}>
          <span>{text}</span>

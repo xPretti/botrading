@@ -1,13 +1,13 @@
-import styles from "./HeaderNavMenuLink.module.css";
+import styles from "./MenuLink.module.css";
 
-interface IHeaderNavMenuLinkProps {
+interface IMenuLinkProps {
    href: string;
    title: string;
    desc?: string;
    icon?: React.ReactNode;
 };
 
-export function HeaderNavMenuLink({ href, title, desc, icon }: IHeaderNavMenuLinkProps) {
+export function MenuLink({ href, title, desc, icon }: IMenuLinkProps) {
    return (
       <a className={styles.headerNavMenuLink} href={href}>
          {icon &&

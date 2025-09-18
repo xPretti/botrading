@@ -1,6 +1,8 @@
 import { NavigationMenu } from "radix-ui";
 import styles from "./HeaderNav.module.css";
-import { HeaderNavLink, HeaderNavMenu, HeaderNavMenuLink } from "./compound";
+import { Link } from "./compound/link/Link";
+import { Menu } from "./compound/menu/Menu";
+import { MenuLink } from "./compound/menu/MenuLink";
 
 
 export interface IHeaderNavProps {
@@ -20,6 +22,6 @@ export function HeaderNav({ children }: IHeaderNavProps) {
 /**
  * Componentes
  */
-HeaderNav.Link = HeaderNavLink;
-HeaderNav.Menu = HeaderNavMenu;
-HeaderNav.MenuLink = HeaderNavMenuLink;
+HeaderNav.Link = Link;
+HeaderNav.Menu = Menu;
+HeaderNav.MenuLink = MenuLink;

@@ -10,8 +10,3 @@ export interface IThemeContextType {
    toggleTheme: () => void;
    setTheme: (theme: Theme) => void;
 }
-
-export interface IThemeProviderProps {
-   children: React.ReactNode;
-   defaultTheme?: Theme;
-}
