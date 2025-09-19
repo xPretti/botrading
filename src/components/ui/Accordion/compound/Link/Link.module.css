@@ -1,0 +1,32 @@
+.menuLink {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.625rem 0;
+   text-decoration: none;
+}
+
+.menuLink:hover .linkArrow {
+   color: var(--sl-color-accent);
+}
+
+.linkIcon {
+   display: flex;
+   width: 1.5625rem;
+   height: 1.5625rem;
+   color: var(--sl-color-gray-1);
+}
+
+.linkTitle {
+   font-size: var(--sl-font-size-medium);
+   font-weight: 300;
+   color: var(--sl-color-white);
+}
+
+.linkArrow {
+   display: flex;
+   width: 1.5625rem;
+   height: 1.5625rem;
+   color: var(--sl-color-gray-1);
+}

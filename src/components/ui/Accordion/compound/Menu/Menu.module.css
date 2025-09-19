@@ -1,0 +1,74 @@
+.menuItem {
+   border-bottom: 1px solid var(--border-color);
+}
+
+.menuItem,
+.menuTrigger,
+.menuHeader {
+   width: 100%;
+}
+
+.menuHeader {
+   position: relative;
+   z-index: 10;
+}
+.menuItem[data-state='open'] .menuHeader {
+   box-shadow: var(--sl-drop-shadow);
+}
+
+.menuTrigger {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: var(--sl-color-white);
+   padding: 0.625rem var(--sl-page-padding);
+}
+
+.menuTitleWrapper {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.menuIcon {
+   display: flex;
+   width: 1.5625rem;
+   height: 1.5625rem;
+   color: var(--sl-color-gray-1);
+}
+
+.menuTitle {
+   font-size: var(--sl-font-size-medium);
+   font-weight: 500;
+   color: var(--sl-color-white);
+   text-decoration: none;
+}
+
+.menuIndicatorWrapper {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+.menuIndicatorDivider {
+   width: 1px;
+   height: 1.5rem;
+   background-color: var(--sl-color-header-border);
+}
+.menuItem[data-state='open'] .menuIndicator {
+   transform: rotate(180deg);
+   transition: transform 0.2s ease-in-out;
+}
+.menuIndicator {
+   display: flex;
+   color: var(--sl-color-gray-1);
+   width: 1.5rem;
+   height: 1.5rem;
+}
+
+.menuContent {
+   background-color: var(--sl-color-gray-8);
+   padding: 0 var(--sl-page-padding);
+}

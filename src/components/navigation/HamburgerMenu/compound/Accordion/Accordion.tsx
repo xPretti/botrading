@@ -15,7 +15,7 @@ export function Accordion({ icon, title, children }: IAccordionProps) {
          type="single"
          collapsible
       >
-         <RadixAccordion.Item className={styles.menuAccordionItem} value="item-1">
+         <RadixAccordion.Item className={styles.menuAccordionItem} value={title}>
             <RadixAccordion.Header className={styles.menuAccordionHeader}>
                <RadixAccordion.Trigger className={styles.menuAccordionTrigger}>
                   <div className={styles.menuAccordionTitleWrapper}>

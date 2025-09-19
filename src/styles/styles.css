@@ -43,6 +43,8 @@
    --sl-color-header-border: var(--sl-color-gray-5);
    --sl-color-header-text: var(--sl-color-gray-1);
 
+   --sl-color-divider: var(--sl-color-gray-5);
+
    --my-color-scrollbar-bg: #252b36;
    --my-color-scrollbar-thumb: #4d5665;
    --my-color-scrollbar-thumb-hover: #5a6373;
@@ -96,6 +98,11 @@
  */
 body {
    background-color: var(--sl-color-bg);
+}
+
+img,
+svg {
+   user-select: none;
 }
 
 p,

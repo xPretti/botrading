@@ -6,19 +6,17 @@
    align-items: center;
    justify-content: center;
    margin-top: 90px;
-   padding: 2.1875rem var(--sl-page-padding);
+   /* padding: 2.1875rem var(--sl-page-padding); */
+   padding: 2.1875rem 0;
    border-top: 1px solid var(--sl-color-header-border);
    box-shadow: var(--sl-upper-shadow);
    background-color: var(--sl-color-header-bg);
 }
 
-.footer p {
-   text-wrap: nowrap;
-}
-
 /* Area do conteudo */
 .footerContent {
    width: 100%;
+   overflow: hidden;
    /* max-width: var(--sl-page-max-width); */
    max-width: var(--sl-page-max-width-footer);
 }
@@ -28,8 +26,7 @@
 */
 .footerUpper {
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+   flex-direction: column;
    gap: 3rem;
    margin-bottom: 4rem;
 }
@@ -37,7 +34,10 @@
 /* Esquerda */
 .footerUpperLeft {
    display: flex;
+   align-items: center;
+   justify-content: center;
    flex-direction: column;
+   padding: 0 var(--sl-page-padding);
    gap: 0.25rem;
 }
 .footerUpperLeftLogo {
@@ -58,6 +58,7 @@
    font-size: var(--sl-font-size-medium);
    font-weight: 300;
    color: var(--sl-color-white);
+   text-wrap: nowrap;
 }
 .footerUpperLeftContentHeart {
    color: var(--sl-color-accent-high);
@@ -67,6 +68,7 @@
 .footerUpperLeftContentTech {
    display: flex;
    align-items: center;
+   justify-content: center;
    gap: 0.625rem;
 }
 .footerUpperLeftContentTech a {
@@ -80,12 +82,7 @@
 
 /* Direita */
 .footerUpperRight {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   gap: 1rem;
    width: 100%;
-   max-width: 45rem;
    overflow: hidden;
 }
 
@@ -103,14 +100,39 @@
 */
 .footerLower {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
    gap: 3rem;
    margin-top: 2.1875rem;
+   padding: 0 var(--sl-page-padding);
 }
 
 .footerLowerText {
    font-size: var(--sl-font-size-medium);
    font-weight: 500;
    color: var(--sl-color-white);
+   text-align: center;
+}
+
+/**
+ * Responsividade
+*/
+/* Tablet */
+@media (min-width: 768px) {
+   .footerUpper {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .footerUpperLeft {
+      align-items: flex-start;
+   }
+
+   .footerUpperLeftContentTech {
+      justify-content: flex-start;
+   }
+
+   .footerUpperRight {
+      max-width: 45rem;
+   }
 }

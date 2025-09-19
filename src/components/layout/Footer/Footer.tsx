@@ -1,14 +1,39 @@
 import { Heart } from "lucide-react";
-import { FooterLinks } from "./components/FooterLinks";
 import styles from "./Footer.module.css";
+import { useDevice } from "@/hooks/useDevice";
+import { DEVICE } from "@/types/device-type";
+import { FooterLinksGroup } from "./components/FooterLinksGroup";
+import type { FooterLinksType } from "@/types/footer-links-type";
+import { FooterLinksAccordion } from "./components/FooterLinksAccordion";
 
 const LINKS = {
    DISCORD: 'http://discord.botrading.net/',
    MQL5: 'https://www.mql5.com/en/users/fabiopretti'
 };
 
+const FOOTER_LINKS: FooterLinksType[] = [
+   {
+      category: "PRODUTOS", links: [
+         { name: "Robôs", url: "#" },
+         { name: "Indicadores", url: "#" },
+      ]
+   },
+   {
+      category: "RECURSOS", links: [
+         { name: "Documentações", url: "#" },
+      ]
+   },
+   {
+      category: "EMPRESA", links: [
+         { name: "Sobre", url: "#" },
+         { name: "Contato", url: "#" },
+      ]
+   }
+];
+
 export function Footer() {
 
+   const device = useDevice();
    const getCurrentYear = () => new Date().getFullYear();
 
    return (
@@ -26,23 +51,11 @@ export function Footer() {
                   </div>
                </div>
                <div className={styles.footerUpperRight}>
-                  <FooterLinks title="PRODUTOS"
-                     links={
-                        [
-                           { title: "Robôs", link: "#" },
-                           { title: "Indicadores", link: "#" },
-                        ]} />
-                  <FooterLinks title="RECURSOS"
-                     links={
-                        [
-                           { title: "Documentações", link: "#" },
-                        ]} />
-                  <FooterLinks title="EMPRESA"
-                     links={
-                        [
-                           { title: "Sobre", link: "#" },
-                           { title: "Contato", link: "#" },
-                        ]} />
+                  {device == DEVICE.MOBILE
+                     ?
+                     <FooterLinksAccordion links={FOOTER_LINKS} />
+                     : <FooterLinksGroup links={FOOTER_LINKS} />}
+
                </div>
             </div>
             <div className={styles.footerLowerDivider}></div>

@@ -1,0 +1,8 @@
+.footerLinksGroup {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1rem;
+   width: 100%;
+   padding: 0 var(--sl-page-padding);
+}
