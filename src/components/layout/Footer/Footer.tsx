@@ -43,11 +43,8 @@ export function Footer() {
                <div className={styles.footerUpperLeft}>
                   <p className={styles.footerUpperLeftLogo}>Botrading</p>
                   <div className={styles.footerUpperLefContent}>
-                     <p className={styles.footerUpperLeftContentText}>Feito com muito <Heart className={styles.footerUpperLeftContentHeart} /> no Brasil!</p>
-                     <div className={styles.footerUpperLeftContentTech}>
-                        <a href={LINKS.DISCORD}><img src="/Discord.svg" alt="Discord" width={25} height={19} /></a>
-                        <a href={LINKS.MQL5}><img src="/Mql5.png" alt="MetaTrader" width={60} height={22} /></a>
-                     </div>
+                     <p className={styles.footerUpperLeftContentText}>Soluções feitas com <Heart className={styles.footerUpperLeftContentHeart} /> no Brasil!</p>
+
                   </div>
                </div>
                <div className={styles.footerUpperRight}>
@@ -58,9 +55,15 @@ export function Footer() {
 
                </div>
             </div>
-            <div className={styles.footerLowerDivider}></div>
+            <div className={styles.footerMiddle}>
+               <div className={styles.footerLowerDivider}></div>
+            </div>
             <div className={styles.footerLower}>
                <p className={styles.footerLowerText}>© {getCurrentYear()} Botrading. Todos os direitos reservados.</p>
+               <div className={styles.footerSocial}>
+                  <a href={LINKS.DISCORD}><img src="/Discord.svg" alt="Discord" width={25} height={19} /></a>
+                  <a href={LINKS.MQL5}><img src="/Mql5.png" alt="MetaTrader" width={60} height={22} /></a>
+               </div>
             </div>
          </div>
       </footer>
