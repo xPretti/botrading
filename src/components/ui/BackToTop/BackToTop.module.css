@@ -1,0 +1,21 @@
+.backToTop {
+   opacity: 0.5;
+   position: fixed;
+   bottom: 5rem;
+   right: 5rem;
+   width: fit-content;
+   height: fit-content;
+   padding: 8px;
+   z-index: 1000;
+   cursor: pointer;
+   border-radius: 50%;
+   box-shadow: var(--sl-drop-shadow-medium);
+}
+
+.backToTop:hover {
+   opacity: 1;
+}
+
+.backToTopIcon {
+   color: var(--sl-color-white);
+}

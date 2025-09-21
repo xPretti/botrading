@@ -3,10 +3,8 @@ import styles from "./Hero.module.css";
 import { Frame } from "@/components/ui/Frame/Frame";
 import { useDevice } from "@/hooks/useDevice";
 import { DEVICE } from "@/types/device-type";
-interface IHeroProps {
-  children?: React.ReactNode;
-}
-export function Hero({ children }: IHeroProps) {
+
+export function Hero() {
   const device = useDevice();
   return (
     <div className={styles.hero}>
@@ -27,7 +25,8 @@ export function Hero({ children }: IHeroProps) {
             <h4 className={styles.heroDescription}>Soluções personalizadas para automação, análise e performance no mercado financeiro.</h4>
           </div>
         </div>
-        {device == DEVICE.DESKTOP &&
+        {
+          device == DEVICE.DESKTOP &&
           <div className={styles.heroRight}>
             <Frame className={styles.heroFrame}>
               <img src="/Candle.png" alt="Logo" width="100%" height="100%" />
@@ -41,7 +40,9 @@ export function Hero({ children }: IHeroProps) {
                 <img src="/Botrading.png" alt="Logo" width={130} height={130} title="Botrading" />
               </Frame>
             </Frame>
-          </div>}
+          </div>
+        }
+
       </div>
     </div>
   );
