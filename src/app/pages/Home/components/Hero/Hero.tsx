@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import styles from "./Hero.module.css";
 import { Frame } from "@/components/ui/Frame/Frame";
 import { useDevice } from "@/hooks/useDevice";
@@ -42,7 +42,9 @@ export function Hero() {
             </Frame>
           </div>
         }
-
+      </div>
+      <div className={styles.heroContinue}>
+        <ChevronDown className={styles.heroContinueIcon} width={70} height={70} />
       </div>
     </div>
   );
