@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 estrutura-do-projeto.txt
+
+cfft.config.json
+.cfft.templates

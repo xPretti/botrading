@@ -5,6 +5,7 @@ export const Providers = ({ children }: { children: ReactNode; }) => {
    return (
       <ThemeProvider>
          {children}
+
       </ThemeProvider>
    );
 };
