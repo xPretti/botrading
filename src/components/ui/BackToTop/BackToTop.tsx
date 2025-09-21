@@ -5,10 +5,10 @@ import { usePageScrollPosition } from "@/hooks/usePageScrollPosition";
 import { useDevice } from "@/hooks/useDevice";
 import { DEVICE } from "@/types/device-type";
 interface IBackToTopProps {
-  children?: React.ReactNode;
+  distance?: number;
 }
-export function BackToTop({ children }: IBackToTopProps) {
-  const passed = usePageScrollPosition(10);
+export function BackToTop({ distance = 300 }: IBackToTopProps) {
+  const passed = usePageScrollPosition(distance);
   const device = useDevice();
 
   if (!passed || device != DEVICE.DESKTOP) return null;
