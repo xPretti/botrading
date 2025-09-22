@@ -49,7 +49,7 @@ export function Features() {
         </div>
         <div className={styles.featuresCards}>
           {ITEMS.map((item) => (
-            <FeatureCard key={item.title} icon={item.icon} title={item.title} desc={item.desc} width="100%" height="178px" maxWidth="380px" />
+            <FeatureCard key={item.title} icon={item.icon} title={item.title} desc={item.desc} width="100%" height="200px" maxWidth="380px" />
           ))}
         </div>
       </div>
