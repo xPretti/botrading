@@ -1,0 +1,52 @@
+.featureCard {
+   display: flex;
+   gap: 0.625rem;
+   padding: 1.25rem;
+   background-color: var(--sl-color-bg);
+   border: 1px solid var(--sl-color-gray-5);
+   border-radius: 0.625rem;
+   box-shadow: var(--sl-drop-shadow-large);
+   transition: transform 0.2s ease-in-out;
+}
+.featureCard:hover {
+   /* border: 1px solid var(--sl-color-red); */
+   transform: scale(1.1);
+   transition: transform 0.2s ease-in-out;
+}
+
+/**
+ * Icon
+*/
+.featureCardIcon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--sl-color-red-high);
+   border: 1px solid var(--sl-color-red);
+   color: var(--sl-color-white);
+   border-radius: 50%;
+   width: fit-content;
+   height: fit-content;
+   min-height: 40px;
+   min-width: 40px;
+}
+
+/**
+ * Content
+*/
+.featureCardContent {
+   display: flex;
+   flex-direction: column;
+   gap: 0.625rem;
+}
+.featureCardContent h4 {
+   font-size: var(--sl-font-size-xlarge);
+   font-weight: 700;
+   color: var(--sl-color-gray-1);
+}
+
+.featureCardContent p {
+   font-size: var(--sl-font-size-base);
+   font-weight: 300;
+   color: var(--sl-color-gray-1);
+}
