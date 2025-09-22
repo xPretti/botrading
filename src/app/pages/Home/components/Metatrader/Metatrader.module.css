@@ -1,0 +1,80 @@
+.metatrader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 10rem var(--sl-page-padding);
+}
+
+.metatraderContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   max-width: var(--sl-page-max-width);
+   width: 100%;
+   gap: 1.875rem;
+   /* flex-wrap: wrap; */
+}
+
+/**
+ * Conteudo da esquerda
+*/
+.metatraderLeft {
+   width: 100%;
+   gap: 2.25rem;
+}
+.metatraderLeft,
+.metatraderDescriptions {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.metatraderDescriptions {
+   gap: 1.25rem;
+}
+
+.metatraderLeft h3 {
+   font-size: var(--sl-font-size-xxxlarge);
+   font-weight: 700;
+   color: var(--sl-color-white);
+}
+
+.metatraderDescriptions p {
+   font-size: var(--sl-font-size-base);
+   font-weight: 300;
+   color: var(--sl-color-white);
+}
+
+/**
+ * Conteudo da direita
+*/
+.metatraderRight {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.metatraderRight img {
+   filter: drop-shadow(var(--sl-drop-shadow-medium));
+}
+
+/**
+ * Media queries
+*/
+@media (max-width: 1024px) {
+   .metatraderLeft {
+      order: 2;
+      text-align: center;
+      align-items: center;
+   }
+   .metatraderRight {
+      order: 1;
+   }
+   .metatraderContent {
+      flex-direction: column;
+      gap: 2.5rem;
+   }
+}

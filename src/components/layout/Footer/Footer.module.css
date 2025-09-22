@@ -16,7 +16,7 @@
 .footerContent {
    width: 100%;
    overflow: hidden;
-   max-width: var(--sl-page-max-width-footer);
+   max-width: calc(var(--sl-page-max-width-footer) + (var(--sl-page-padding) * 2));
 }
 
 /**

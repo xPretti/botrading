@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { BackToTop } from "@/components/ui/BackToTop/BackToTop";
 import { Brokers } from "./components/Brokers/Brokers";
+import { Metatrader } from "./components/Metatrader/Metatrader";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <BackToTop />
             <Hero />
             <Brokers />
+            <Metatrader />
             <Footer />
         </>
     );

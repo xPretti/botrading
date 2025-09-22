@@ -1,7 +1,7 @@
 :root {
    /* LAYOUT */
-   --sl-page-max-width: 1500px;
-   --sl-page-max-width-footer: 1250px;
+   --sl-page-max-width: 1250px;
+   --sl-page-max-width-footer: 1250px; /*1435px; */
    --sl-page-max-width-hero: 1250px;
    --sl-page-padding: 90px;
 
