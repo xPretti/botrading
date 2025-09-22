@@ -1,5 +1,5 @@
-import { THEME } from "./types/theme-type";
-import { useTheme } from "./hooks/useTheme";
+import { THEME } from "../../types/theme-type";
+import { useTheme } from "../../hooks/useTheme";
 import styles from "./ThemeToggle.module.css";
 import { Moon, Sun } from "lucide-react";
 

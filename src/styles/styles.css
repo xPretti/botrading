@@ -33,6 +33,7 @@
 }
 :root[data-theme='dark'] {
    --sl-color-bg: #1c212a;
+   --sl-color-section: #181c24;
    --sl-color-accent-high: #f75e60;
    --sl-color-accent: #eb8484;
    --sl-color-accent-low: #eb8484;

@@ -114,6 +114,7 @@
    border: 1px solid var(--sl-color-red);
    height: 100%;
    text-align: center;
+   text-decoration: none;
 }
 
 .heroNewsLabel {
