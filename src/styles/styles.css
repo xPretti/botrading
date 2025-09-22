@@ -52,6 +52,10 @@
    --sl-color-red: #fd6666;
    --sl-color-red-low: #ff9494;
 
+   --sl-color-discord-high: #4550e9;
+   --sl-color-discord: #5662f6;
+   --sl-color-discord-low: #757eee;
+
    --sl-color-header-bg: #1b2028;
    --sl-color-header-border: var(--sl-color-gray-5);
    --sl-color-header-text: var(--sl-color-gray-1);

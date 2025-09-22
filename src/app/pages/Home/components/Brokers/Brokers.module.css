@@ -14,7 +14,7 @@
    max-width: var(--sl-page-max-width);
    width: 100%;
    margin: auto;
-   gap: 1.875rem;
+   gap: 3.5rem;
 }
 
 /**
@@ -63,7 +63,7 @@
    align-items: center;
    background-color: var(--sl-color-gray-7);
    border: 1px solid var(--sl-color-gray-5);
-   box-shadow: var(--sl-drop-shadow) var(--sl-inner-shadow);
+   box-shadow: var(--sl-drop-shadow), var(--sl-inner-shadow);
    border-radius: 10px;
 }
 

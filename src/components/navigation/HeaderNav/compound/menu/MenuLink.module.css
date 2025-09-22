@@ -13,8 +13,7 @@
    padding: 0.625rem;
    cursor: pointer;
    text-decoration: none;
-   box-shadow: var(--sl-inner-shadow);
-   box-shadow: var(--sl-drop-shadow);
+   box-shadow: var(--sl-drop-shadow), var(--sl-inner-shadow);
 }
 
 .headerNavMenuLink:hover {

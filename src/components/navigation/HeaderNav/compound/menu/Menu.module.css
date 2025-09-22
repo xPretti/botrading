@@ -80,8 +80,7 @@
    padding: 15px;
    background-color: var(--sl-color-bg);
    border: 1px solid var(--sl-color-header-border);
-   box-shadow: var(--sl-inner-shadow);
-   box-shadow: var(--sl-drop-shadow);
+   box-shadow: var(--sl-drop-shadow), var(--sl-inner-shadow);
    border-radius: 8px;
    min-width: 330px;
    z-index: 1;
