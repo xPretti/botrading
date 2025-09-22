@@ -1,4 +1,4 @@
-import { Headset } from "lucide-react";
+import { BookCheck, Gift, Headset, MessageSquareMore, RefreshCw, ShieldCheck } from "lucide-react";
 import styles from "./Features.module.css";
 import { FeatureCard } from "@/components/ui/Cards/FeatureCard/FeatureCard";
 
@@ -11,27 +11,27 @@ const ITEMS = [
   {
     title: "Qualidade garantida",
     desc: "Entregamos soluções testadas, seguras e eficientes, com alto padrão de desempenho e confiabilidade.",
-    icon: <Headset />
+    icon: <ShieldCheck />
   },
   {
     title: "Projetos documentados",
     desc: "Todos os nossos projetos contam com documentação completa e acessível, para que você possa começar rápido e sem complicação.",
-    icon: <Headset />
+    icon: <BookCheck />
   },
   {
     title: "Comunidade",
     desc: "Participe de uma comunidade de traders e investidores que evoluem juntos, compartilhando estratégias, resultados e experiências com nossas soluções.",
-    icon: <Headset />
+    icon: <MessageSquareMore />
   },
   {
     title: "Projetos gratuitos",
     desc: "Todos os nossos projetos possuem versões gratuitas e prontas para produção. Pague apenas quando realmente precisar de recursos adicionais.",
-    icon: <Headset />
+    icon: <Gift />
   },
   {
     title: "Projetos atualizados",
     desc: "Mantemos todos os nossos projetos sempre atualizados, garantindo segurança, estabilidade e as novidades mais recentes.",
-    icon: <Headset />
+    icon: <RefreshCw />
   }
 ];
 
