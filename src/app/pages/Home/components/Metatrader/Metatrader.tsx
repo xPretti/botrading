@@ -14,7 +14,7 @@ export function Metatrader() {
           </div>
         </div>
         <div className={styles.metatraderRight}>
-          <img src="/Metatrader5.png" alt="Logo" width="289" height="289" />
+          <img className={styles.metatraderImage} src="/Metatrader5.png" alt="Logo" width="289" height="289" />
         </div>
       </div>
     </section >

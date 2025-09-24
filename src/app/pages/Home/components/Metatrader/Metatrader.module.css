@@ -57,8 +57,14 @@
    align-items: center;
 }
 
-.metatraderRight img {
+.metatraderImage {
    filter: drop-shadow(var(--sl-drop-shadow-medium));
+   transition: transform 0.1s ease-in-out;
+}
+
+.metatraderImage:hover {
+   transform: scale(1.2);
+   transition: transform 0.2s ease-in-out;
 }
 
 /**
