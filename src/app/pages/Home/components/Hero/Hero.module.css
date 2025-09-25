@@ -130,9 +130,11 @@
    cursor: pointer;
    gap: 5px;
 }
-.heroNewsButton:hover {
-   background-color: var(--sl-color-red);
-   box-shadow: none;
+@media (hover: hover) and (pointer: fine) {
+   .heroNewsButton:hover {
+      background-color: var(--sl-color-red);
+      box-shadow: none;
+   }
 }
 
 .heroNewsButton span {
