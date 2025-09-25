@@ -67,10 +67,12 @@
    border-radius: 10px;
 }
 
-.brokersItemsList li:hover {
-   background-color: var(--sl-color-gray-5);
-   transform: scale(1.2);
-   transition: transform 0.2s ease-in-out;
+@media (hover: hover) and (pointer: fine) {
+   .brokersItemsList li:hover {
+      background-color: var(--sl-color-gray-5);
+      transform: scale(1.2);
+      transition: transform 0.2s ease-in-out;
+   }
 }
 
 .brokersItem {
