@@ -6,7 +6,7 @@
 
    width: 100%;
    height: 100%;
-   background: repeating-linear-gradient(90deg, #222833 0 1px, transparent 1px 40px), repeating-linear-gradient(0deg, #222833 0 1px, transparent 1px 40px);
+   background: var(--sl-page-grid);
    padding: 0 var(--sl-page-padding);
    overflow: hidden;
 }

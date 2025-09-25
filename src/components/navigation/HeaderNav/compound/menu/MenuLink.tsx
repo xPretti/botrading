@@ -1,4 +1,6 @@
+import { NavLink } from "react-router";
 import styles from "./MenuLink.module.css";
+import { NavigationMenu } from "radix-ui";
 
 interface IMenuLinkProps {
    href: string;
@@ -8,17 +10,21 @@ interface IMenuLinkProps {
 };
 
 export function MenuLink({ href, title, desc, icon }: IMenuLinkProps) {
+
+
    return (
-      <a className={styles.headerNavMenuLink} href={href}>
-         {icon &&
-            <div className={styles.headerNavMenuLinkIcon}>
-               {icon}
+      <NavigationMenu.Link asChild>
+         <NavLink className={styles.headerNavMenuLink} to={href}>
+            {icon &&
+               <div className={styles.headerNavMenuLinkIcon}>
+                  {icon}
+               </div>
+            }
+            <div className={styles.HhaderNavMenuLinkContent}>
+               <p className={styles.headerNavMenuLinkTitle}>{title}</p>
+               {desc && <p className={styles.headerNavMenuLinkDesc}>{desc}</p>}
             </div>
-         }
-         <div className={styles.HhaderNavMenuLinkContent}>
-            <p className={styles.headerNavMenuLinkTitle}>{title}</p>
-            {desc && <p className={styles.headerNavMenuLinkDesc}>{desc}</p>}
-         </div>
-      </a>
+         </NavLink>
+      </NavigationMenu.Link>
    );
 };

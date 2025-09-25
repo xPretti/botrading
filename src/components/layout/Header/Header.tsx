@@ -24,11 +24,11 @@ export function Header() {
             {!isMobile && <div className={styles.headerCenter}>
                <HeaderNav>
                   <HeaderNav.Link text="Home" href="/" />
-                  <HeaderNav.Menu text="Soluções" >
-                     <HeaderNav.MenuLink href="/" title="ScriptBot" desc="Ferramente de automação de estratégias." icon={<Bot />} />
-                     <HeaderNav.MenuLink href="/" title="Ver mais" />
+                  <HeaderNav.Menu text="Soluções" activePath="/solutions" >
+                     <HeaderNav.MenuLink href="/solutions/scriptbot" title="ScriptBot" desc="Ferramente de automação de estratégias." icon={<Bot />} />
+                     <HeaderNav.MenuLink href="/solutions" title="Ver mais" />
                   </HeaderNav.Menu>
-                  <HeaderNav.Link text="Central de Suporte" href="/" />
+                  <HeaderNav.Link text="Central de Suporte" href="/help" />
                </HeaderNav>
             </div>}
             <div className={styles.headerRight}>
@@ -37,8 +37,8 @@ export function Header() {
                      <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
                      <HamburgerMenu.Divider />
                      <HamburgerMenu.Accordion title="Soluções" icon={<Lightbulb />}>
-                        <HamburgerMenu.Link title="ScriptBot" href="/solucoes/scriptbot" />
-                        <HamburgerMenu.Link title="Ver mais" href="/solucoes" />
+                        <HamburgerMenu.Link title="ScriptBot" href="/solutions/scriptbot" />
+                        <HamburgerMenu.Link title="Ver mais" href="/solutions" />
                      </HamburgerMenu.Accordion>
                      <HamburgerMenu.Divider />
                      <HamburgerMenu.Link title="Central de Suporte" href="/suporte" icon={<Headset />} />

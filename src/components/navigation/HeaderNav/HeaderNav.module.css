@@ -1,3 +1,8 @@
+.headerNav {
+   display: flex;
+   align-items: stretch;
+   height: 100%;
+}
 /**
  * Items
 */
@@ -7,4 +12,5 @@
    align-items: center;
    list-style-type: none;
    gap: 0.3125rem;
+   height: 100%;
 }

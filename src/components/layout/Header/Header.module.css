@@ -17,6 +17,7 @@
    padding: 0 var(--sl-page-padding);
    min-height: 80px;
    box-shadow: var(--sl-drop-shadow);
+   align-items: stretch;
 }
 
 /**
@@ -60,6 +61,7 @@
    flex-grow: 2;
    justify-content: center;
    align-items: center;
+   height: 100%;
 }
 
 /* Navigation */

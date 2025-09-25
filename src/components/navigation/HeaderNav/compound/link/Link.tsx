@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import styles from "./Link.module.css";
 
 interface ILinkProps {
@@ -7,8 +8,14 @@ interface ILinkProps {
 
 export function Link({ text, href }: ILinkProps) {
    return (
-      <a className={styles.headerNavLink} href={href}>
-         <span>{text}</span>
-      </a>
+      <div className={styles.linkWrapper}>
+         <NavLink to={href} className={({ isActive }) => (
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+         )}>
+            <span>
+               {text}
+            </span>
+         </NavLink>
+      </div>
    );
 }

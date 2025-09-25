@@ -1,0 +1,27 @@
+.container {
+   flex: 1;
+   width: 100%;
+   background: var(--sl-page-grid);
+   padding: 0 var(--sl-page-padding);
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: var(--sl-page-max-width);
+   margin: 120px auto;
+}
+
+.title {
+   font-size: 6rem;
+   margin: 0;
+   color: var(--sl-color-accent-high);
+}
+
+.message {
+   color: var(--sl-color-white);
+   font-size: var(--sl-font-size-xlarge);
+   margin: 20px 0;
+   text-align: center;
+}

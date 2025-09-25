@@ -1,5 +1,3 @@
-import { Footer } from "@/components/layout/Footer/Footer";
-import { Header } from "@/components/layout/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { BackToTop } from "@/components/ui/BackToTop/BackToTop";
 import { Brokers } from "./components/Brokers/Brokers";
@@ -8,16 +6,14 @@ import { Features } from "./components/Features/Features";
 import { Community } from "./components/Community/Community";
 
 export default function Home() {
-    return (
-        <>
-            <Header />
-            <BackToTop />
-            <Hero />
-            <Brokers />
-            <Metatrader />
-            <Features />
-            <Community />
-            <Footer />
-        </>
-    );
+   return (
+      <>
+         <BackToTop />
+         <Hero />
+         <Brokers />
+         <Metatrader />
+         <Features />
+         <Community />
+      </>
+   );
 }

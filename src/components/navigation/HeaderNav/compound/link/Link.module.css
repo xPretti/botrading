@@ -1,14 +1,26 @@
-.headerNavLink {
+.linkWrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.link {
    display: flex;
    justify-content: center;
    align-items: center;
    text-decoration: none;
    height: fit-content;
    padding: 0.625rem 1rem;
-   border-radius: 8px;
    font-size: var(--sl-font-size-base);
    text-wrap: nowrap;
+   border-radius: 8px;
+   user-select: none;
 }
-.headerNavLink:hover {
+.link:hover {
    background-color: var(--sl-color-gray-7);
+}
+
+.linkWrapper:has(.link.active) {
+   border-bottom: 1px solid var(--sl-color-accent-high);
 }

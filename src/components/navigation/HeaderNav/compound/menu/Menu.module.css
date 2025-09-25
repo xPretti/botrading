@@ -2,6 +2,17 @@
  * Item
 */
 .headerNavItem {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.headerNavItem.active {
+   border-bottom: 1px solid var(--sl-color-accent-high);
+}
+
+.headerNavItemContent {
    position: relative;
 }
 
@@ -21,7 +32,7 @@
    user-select: none;
    border-radius: 8px;
 }
-.headerNavItem:hover .headerNavTrigger,
+.headerNavItemContent:hover .headerNavTrigger,
 .headerNavTrigger:hover {
    background-color: var(--sl-color-gray-7);
 }
@@ -43,7 +54,7 @@
    transition: transform 0.2s ease-in-out;
 }
 
-.headerNavItem:hover .headerNavTrigger[data-state='open'] .headerNavTriggerIcon {
+.headerNavItemContent:hover .headerNavTrigger[data-state='open'] .headerNavTriggerIcon {
    transform: rotate(180deg);
 }
 
@@ -52,6 +63,7 @@
 */
 .headerNavContent {
    --sl-local-distance: 10px;
+   top: 100%;
    position: absolute;
    padding-top: var(--sl-local-distance);
    z-index: 1;
