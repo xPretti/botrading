@@ -1,3 +1,96 @@
 .help {
-   display: block;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+
+/**
+ * Discord
+*/
+.discordSection {
+   padding: 3.75rem var(--sl-page-padding);
+   background-color: var(--sl-color-section);
+   border-top: 1px solid var(--sl-color-header-border);
+   border-bottom: 1px solid var(--sl-color-header-border);
+}
+
+.discordContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   gap: 45px;
+}
+
+.discordTitle {
+   font-size: var(--sl-font-size-xxxlarge);
+   font-weight: 700;
+   color: var(--sl-color-discord);
+}
+.discordDescription {
+   font-size: var(--sl-font-size-base);
+   width: 100%;
+   margin-top: 15px;
+   color: var(--sl-color-gray-1);
+}
+
+.discordButton {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--sl-color-discord);
+   border: 1px solid var(--sl-color-discord);
+   box-shadow: var(--sl-drop-shadow);
+   color: var(--sl-color-white);
+   font-size: var(--sl-font-size-base);
+   font-weight: 500;
+   padding: 0.625rem 1.25rem;
+   border-radius: 0.625rem;
+   cursor: pointer;
+   text-decoration: none;
+   width: 100%;
+   margin: auto;
+   box-shadow: var(--sl-drop-shadow);
+   transition: background-color 0.1s ease-in-out;
+}
+.discordButton:hover {
+   background-color: var(--sl-color-discord-high);
+   border: 1px solid var(--sl-color-discord-high);
+   transition: background-color 0.2s ease-in-out;
+}
+
+/**
+ * Todos os canais de suporte
+*/
+.channelsSection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 3.75rem 0;
+   width: 100%;
+   gap: 2.8125rem;
+}
+
+.channelsList {
+   display: flex;
+   align-items: stretch;
+   justify-content: space-around;
+   gap: 3rem;
+   width: 100%;
+   flex-wrap: wrap;
+   list-style: none;
+}
+
+.channelsList li {
+   display: flex;
+}
+
+.channelsTitle {
+   font-size: var(--sl-font-size-xxxlarge);
+   font-weight: 700;
+   color: var(--sl-color-white);
+   text-align: center;
+   width: 100%;
 }

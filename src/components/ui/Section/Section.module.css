@@ -1,0 +1,25 @@
+.section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1;
+   width: 100%;
+   background: var(--sl-color-bg);
+   padding: 0 var(--sl-page-padding);
+}
+
+.sectionContent {
+   max-width: var(--sl-page-max-width);
+   width: 100%;
+}
+
+/**
+ * Themes
+ */
+/* Hero */
+.hero {
+   background: var(--sl-page-grid);
+}
+.hero .sectionContent {
+   margin: 120px auto 240px auto;
+}

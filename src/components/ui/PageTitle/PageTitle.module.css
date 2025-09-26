@@ -1,0 +1,21 @@
+.pageTitle {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.875rem;
+}
+
+.title {
+   font-size: var(--sl-font-size-xxxxlarge);
+   color: var(--sl-color-white);
+   font-weight: 700;
+   text-shadow: var(--sl-drop-shadow);
+}
+
+.subtitle {
+   font-size: var(--sl-font-size-large);
+   color: var(--sl-color-gray-2);
+   font-weight: 300;
+   text-shadow: var(--sl-drop-shadow);
+}
