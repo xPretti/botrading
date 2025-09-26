@@ -4,10 +4,8 @@ import { PageTitle } from "@/components/ui/PageTitle/PageTitle";
 import { SupportCard } from "@/components/ui/Cards/SupportCard/SupportCard";
 import { useTheme } from "@/hooks/useTheme";
 import { getThemeValue } from "@/utils/theme-utils";
-interface IHelpProps {
-   children?: React.ReactNode;
-}
-export function Help({ children }: IHelpProps) {
+
+export function Help() {
 
    const { theme } = useTheme();
 

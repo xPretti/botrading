@@ -94,3 +94,16 @@
    text-align: center;
    width: 100%;
 }
+
+/* Tablet */
+@media (min-width: 922px) {
+   .channelsList {
+      justify-content: space-between;
+   }
+}
+
+@media (max-width: 610px) {
+   .channelsList li {
+      width: 100%;
+   }
+}
