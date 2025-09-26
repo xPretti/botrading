@@ -6,7 +6,7 @@ import { useDevice } from "@/hooks/useDevice";
 import { HeaderNav } from "@/components/navigation/HeaderNav/HeaderNav";
 import { HamburgerMenu } from "@/components/navigation/HamburgerMenu/HamburgerMenu";
 import { ThemeToggle } from "@/features/ThemeToggle/ThemeToggle";
-import { NavLink } from "react-router";
+import { CustomNavLink } from "@/components/ui/CustomNavLink/CustomNavLink";
 
 export function Header() {
    const device = useDevice();
@@ -17,10 +17,10 @@ export function Header() {
       <header className={styles.header}>
          <div className={styles.headerContent}>
             <div className={styles.headerLeft}>
-               <NavLink to="/" className={styles.headerLogo}>
+               <CustomNavLink to="/" className={styles.headerLogo}>
                   <img src="/Botrading.png" alt="Logo" />
                   <p>Botrading</p>
-               </NavLink>
+               </CustomNavLink>
             </div>
             {!isMobile && <div className={styles.headerCenter}>
                <HeaderNav>

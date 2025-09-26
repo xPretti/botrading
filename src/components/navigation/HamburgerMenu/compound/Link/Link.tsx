@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { CustomNavLink } from "@/components/ui/CustomNavLink/CustomNavLink";
 import styles from "./Link.module.css";
 import { Dialog } from "radix-ui";
 
@@ -11,12 +11,12 @@ interface ILinkProps {
 export function Link({ icon, title, href }: ILinkProps) {
    return (
       <Dialog.Close asChild>
-         <NavLink to={href} className={styles.menuLink}>
+         <CustomNavLink to={href} className={styles.menuLink}>
             {icon && <div className={styles.linkIcon}>{icon}</div>}
             <p className={styles.linkTitle}>
                {title}
             </p>
-         </NavLink>
+         </CustomNavLink>
       </Dialog.Close>
    );
 }
