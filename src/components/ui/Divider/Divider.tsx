@@ -1,11 +1,21 @@
 import styles from "./Divider.module.css";
 
 interface IDividerProps {
-   size?: 1;
+   thickness?: 1;
+   size?: string;
+
+   type?: "horizontal" | "vertical";
 }
 
-export function Divider({ size = 1 }: IDividerProps) {
+export function Divider({ thickness = 1, size = "100%", type = "horizontal" }: IDividerProps) {
+
+   if (type === "vertical") {
+      return (
+         <div className={styles.divider} style={{ width: `${thickness}px`, height: `${size}` }}></div>
+      );
+   }
+
    return (
-      <div className={styles.divider} style={{ height: `${size}px` }}></div>
+      <div className={styles.divider} style={{ width: `${size}`, height: `${thickness}px` }}></div>
    );
 }

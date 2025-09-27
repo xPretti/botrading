@@ -53,6 +53,7 @@
    margin: auto;
    box-shadow: var(--sl-drop-shadow);
    transition: background-color 0.1s ease-in-out;
+   user-select: none;
 }
 .discordButton:hover {
    background-color: var(--sl-color-discord-high);
@@ -77,7 +78,7 @@
    display: flex;
    align-items: stretch;
    justify-content: space-around;
-   gap: 3rem;
+   gap: 1rem;
    width: 100%;
    flex-wrap: wrap;
    list-style: none;
@@ -85,6 +86,8 @@
 
 .channelsList li {
    display: flex;
+   align-items: center;
+   min-width: 295px;
 }
 
 .channelsTitle {
@@ -98,7 +101,7 @@
 /* Tablet */
 @media (min-width: 922px) {
    .channelsList {
-      justify-content: space-between;
+      justify-content: center;
    }
 }
 

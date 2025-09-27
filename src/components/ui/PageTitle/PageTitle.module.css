@@ -11,6 +11,7 @@
    color: var(--sl-color-white);
    font-weight: 700;
    text-shadow: var(--sl-drop-shadow);
+   text-align: center;
 }
 
 .subtitle {
@@ -18,4 +19,5 @@
    color: var(--sl-color-gray-2);
    font-weight: 300;
    text-shadow: var(--sl-drop-shadow);
+   text-align: center;
 }

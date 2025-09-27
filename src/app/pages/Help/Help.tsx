@@ -5,6 +5,48 @@ import { SupportCard } from "@/components/ui/Cards/SupportCard/SupportCard";
 import { useTheme } from "@/hooks/useTheme";
 import { getThemeValue } from "@/utils/theme-utils";
 
+export type HelpLinkType = {
+   type: "link" | "text";
+   img: string;
+   imgDark: string;
+   title: string;
+   message: string;
+   url?: string;
+};
+
+const channels: HelpLinkType[] = [
+   {
+      type: "link",
+      img: "/support/Discord.png",
+      imgDark: "/support/Discord.png",
+      title: "Discord",
+      message: "Entrar na comunidade",
+      url: "https://discord.botrading.net"
+   },
+   {
+      type: "text",
+      img: "/support/Whatsapp.png",
+      imgDark: "/support/Whatsapp.png",
+      title: "WhatsApp",
+      message: "(+55) 11 99999-9999"
+   },
+   {
+      type: "text",
+      img: "/support/Email.png",
+      imgDark: "/support/Email.png",
+      title: "E-mail",
+      message: "test@example.com"
+   },
+   {
+      type: "link",
+      img: "/support/Telegram.png",
+      imgDark: "/support/Telegram.png",
+      title: "Telegram",
+      message: "Entrar na comunidade",
+      url: "https://t.me/#"
+   }
+];
+
 export function Help() {
 
    const { theme } = useTheme();
@@ -26,15 +68,11 @@ export function Help() {
          <Section classNameContent={styles.channelsSection} margin="40px 0">
             <h2 className={styles.channelsTitle}>Todos os canais de suporte</h2>
             <ul className={styles.channelsList}>
-               <li>
-                  <SupportCard type="link" img={getThemeValue(theme, "/support/Whatzapp.png", "/support/Whatzapp.png")} title="WhatsApp" message="Entrar em contato" url="https://google.com/" />
-               </li>
-               <li>
-                  <SupportCard type="text" img={getThemeValue(theme, "/support/Mail.png", "/support/Mail.png")} title="E-mail" message="support@botrading.net" />
-               </li>
-               <li>
-                  <SupportCard type="link" img={getThemeValue(theme, "/support/Discord.png", "/support/Discord.png")} title="Discord" message="Entrar em contato" url="https://google.com/" />
-               </li>
+               {channels.map((channel) => (
+                  <li key={channel.title}>
+                     <SupportCard type={channel.type} img={getThemeValue(theme, channel.img, channel.imgDark)} title={channel.title} message={channel.message} url={channel.url} />
+                  </li>
+               ))}
             </ul>
          </Section>
       </div>
