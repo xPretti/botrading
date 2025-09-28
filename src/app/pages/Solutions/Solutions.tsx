@@ -1,9 +1,9 @@
 import { PageTitle } from "@/components/ui/PageTitle/PageTitle";
 import styles from "./Solutions.module.css";
 import { Section } from "@/components/ui/Section/Section";
-import { Details } from "@/components/ui/Details/Details";
 import { ProductCard } from "@/components/ui/Cards/ProductCard/ProductCard";
 import { Badge } from "@/components/ui/Badge/Badge";
+import { Divider } from "@/components/ui/Divider/Divider";
 
 //<span className={styles.outdated}>DESCONTINUADO</span>
 
@@ -13,9 +13,9 @@ export function Solutions() {
    return (
       <div className={styles.solutions}>
          <Section type="hero" className={styles.solutionsHeroSection}>
-            <PageTitle title="Soluções" subtitle="Aqui você encontra todas as nossas soluções." />
+            <PageTitle title="Soluções" subtitle="Descubra todas as soluções que oferecemos para atender às suas necessidades, desde ferramentas práticas até serviços especializados." />
          </Section>
-         <Section margin="40px 0">
+         <Section margin="80px 0">
             <h3 className={styles.solutionsHeaderTitle}>
                Todas as nossas soluções
             </h3>
@@ -25,7 +25,8 @@ export function Solutions() {
                <br />
                <b>Importante:</b><br /> Algumas versões mais antigas deixaram de receber atualizações e podem apresentar problemas. Recomendamos que não utilize versões identificadas com a marcação <Badge type="outdated">DESCONTINUADO</Badge>.
             </p>
-            <Details title="Robôs para Metatrader 5" open={true} className={styles.solutionsDetails}>
+            <Divider size="100%" type="horizontal" className={styles.solutionsDivider} />
+            <div className={styles.solutionsContent}>
                <ul className={styles.solutionsList}>
                   <li>
                      <ProductCard
@@ -54,7 +55,9 @@ export function Solutions() {
                         badges={[{ type: "outdated", Message: "DESCONTINUADO" }]} />
                   </li>
                </ul>
-            </Details>
+            </div>
+            {/* <Details title="Robôs para Metatrader 5" open={true} className={styles.solutionsDetails}>
+            </Details> */}
          </Section>
       </div>
    );

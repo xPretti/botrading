@@ -73,7 +73,7 @@
    box-shadow: var(--sl-drop-shadow);
    color: var(--sl-color-white-real);
    font-size: var(--sl-font-size-medium);
-   font-weight: 600;
+   font-weight: 400;
    cursor: pointer;
    text-decoration: none;
    transition: all 0.2s ease-in-out;

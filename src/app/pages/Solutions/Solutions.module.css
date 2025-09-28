@@ -37,13 +37,16 @@
    color: var(--sl-color-white-real);
 }
 
-.solutionsDetails {
+.solutionsDivider {
+   margin-top: 2rem;
+}
+.solutionsContent {
    margin-top: 2rem;
 }
 
 .solutionsList {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: start;
    align-items: center;
    list-style: none;
    gap: 1rem;
@@ -59,5 +62,6 @@
 @media (min-width: 550px) {
    .solutionsList li {
       width: 240px;
+      justify-content: space-evenly;
    }
 }
