@@ -1,8 +1,8 @@
 :root {
    /* LAYOUT */
-   --sl-page-max-width: 1250px;
-   --sl-page-max-width-footer: 1250px; /*1435px; */
-   --sl-page-max-width-hero: 1250px;
+   --sl-page-max-width: 1300px;
+   --sl-page-max-width-footer: 1300px; /*1435px; */
+   --sl-page-max-width-hero: 1300px;
    --sl-page-padding: 90px;
    --sl-page-grid:
       repeating-linear-gradient(90deg, #222833 0 1px, transparent 1px 40.5px), repeating-linear-gradient(0deg, #222833 0 1px, transparent 1px 40.5px);
@@ -12,6 +12,34 @@
    --sl-drop-shadow-large: 0 4px 8px rgba(0, 0, 0, 0.25);
    --sl-upper-shadow: 0 -1px 2px rgba(0, 0, 0, 0.25);
    --sl-inner-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
+
+   /* Colors */
+   --sl-color-blue-high: #262e52;
+   --sl-color-blue: #5b6bff;
+   --sl-color-blue-low: #5b6bff;
+
+   --sl-color-orange-high: #453933;
+   --sl-color-orange: #ffb274;
+   --sl-color-orange-low: #ffb274;
+
+   --sl-color-purple-high: #3b2b52;
+   --sl-color-purple: #ce64ff;
+   --sl-color-purple-low: #ce64ff;
+
+   --sl-color-yellow-high: #453933;
+   --sl-color-yellow: #f6c94a;
+   --sl-color-yellow-low: #f6c94a;
+
+   --sl-color-red-high: #862828;
+   --sl-color-red: #fd6666;
+   --sl-color-red-low: #ff9494;
+
+   --sl-color-discord-high: #4550e9;
+   --sl-color-discord: #5662f6;
+   --sl-color-discord-low: #757eee;
+
+   /* REAL COLORS */
+   --sl-color-white-real: #ffffff;
 
    /* FONTES */
    --sl-font-family-accent: 'Poppins', sans-serif;
@@ -75,14 +103,6 @@
    --sl-color-gray-7: #252d38;
    --sl-color-gray-8: #1f2630;
    --sl-color-black: #1c212a;
-
-   --sl-color-red-high: #862828;
-   --sl-color-red: #fd6666;
-   --sl-color-red-low: #ff9494;
-
-   --sl-color-discord-high: #4550e9;
-   --sl-color-discord: #5662f6;
-   --sl-color-discord-low: #757eee;
 
    --sl-color-header-bg: #1b2028;
    --sl-color-header-border: var(--sl-color-gray-5);

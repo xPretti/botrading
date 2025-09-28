@@ -1,0 +1,45 @@
+.details {
+   display: block;
+}
+
+/**
+ * Trigger
+*/
+.detailsTrigger {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--sl-color-white);
+   list-style: none;
+   cursor: pointer;
+   user-select: none;
+}
+
+.detailsTriggerTitle {
+   color: var(--sl-color-white);
+   font-size: var(--sl-font-size-xxlarge);
+   font-weight: 600;
+}
+
+/**
+ * Trigger Icon
+*/
+.detailsTriggerIcon {
+   color: var(--sl-color-gray-1);
+   width: 30px;
+   height: 30px;
+   transition: transform 0.2s ease-in-out;
+}
+
+.details[open] .detailsTriggerIcon {
+   /* color: var(--sl-color-accent-high); */
+   transform: rotate(180deg);
+   transition: transform 0.2s ease-in-out;
+}
+
+/**
+ * Content
+*/
+.detailsContent {
+   margin-top: 1rem;
+}

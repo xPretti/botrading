@@ -1,0 +1,121 @@
+.productCard {
+   display: flex;
+   flex-direction: column;
+   padding: 8px;
+   border-radius: 5px;
+   background-color: var(--sl-color-gray-7);
+   border: 1px solid var(--sl-color-gray-5);
+   box-shadow: var(--sl-drop-shadow);
+   overflow: hidden;
+   transition: transform 0.2s ease-in-out;
+   width: 100%;
+}
+.productCard:hover {
+   transform: scale(1.05);
+   transition: transform 0.2s ease-in-out;
+}
+
+/**
+ * Header
+*/
+.header {
+   position: relative;
+}
+
+/**
+ * Body
+*/
+.body {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   flex: 1;
+   overflow: hidden;
+}
+.title {
+   text-wrap: nowrap;
+   font-size: var(--sl-font-size-large);
+   font-weight: 600;
+   text-align: left;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.description {
+   flex: 1;
+   font-size: var(--sl-font-size-small);
+   font-weight: 300;
+   max-height: 100px;
+   color: var(--sl-color-gray-1);
+}
+
+/**
+ * Footer
+*/
+.footer {
+   margin-top: 2.5rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   padding: 8px;
+   border-radius: 5px;
+   background-color: var(--sl-color-accent);
+   border: 1px solid var(--sl-color-accent);
+   box-shadow: var(--sl-drop-shadow);
+   color: var(--sl-color-white-real);
+   font-size: var(--sl-font-size-medium);
+   font-weight: 600;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.2s ease-in-out;
+   user-select: none;
+}
+.button:hover {
+   background-color: var(--sl-color-accent-high);
+   border: 1px solid var(--sl-color-accent-high);
+}
+
+/**
+ * Img
+*/
+.img {
+   display: block;
+   width: 100%;
+   height: 190px;
+   object-fit: contain;
+}
+
+/**
+ * Badges
+*/
+.badges {
+   position: absolute;
+   top: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: start;
+   gap: 4px;
+   width: 100%;
+}
+.badge {
+   display: flex;
+}
+
+.badgeVersion {
+   position: absolute;
+   right: 0;
+   top: 0;
+   color: var(--sl-color-white);
+   font-size: var(--sl-font-size-base);
+   font-weight: 500;
+}

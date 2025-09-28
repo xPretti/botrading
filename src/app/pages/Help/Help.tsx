@@ -53,7 +53,7 @@ export function Help() {
 
    return (
       <div className={styles.help}>
-         <Section type="hero" margin="240px 0">
+         <Section type="hero">
             <PageTitle title="Central de Suporte" subtitle="Aqui você encontra os principais canais de suporte disponíveis para você." />
          </Section>
          <Section className={styles.discordSection}>

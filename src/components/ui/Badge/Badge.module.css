@@ -1,0 +1,27 @@
+.badges {
+   display: block;
+   padding: 3px 6px;
+   border-radius: 8px;
+   user-select: none;
+}
+
+.badge {
+   font-size: var(--sl-font-size-verysmall);
+   font-weight: 500;
+   color: var(--sl-color-white-real);
+}
+
+.badges[data-badge='new'] {
+   background-color: var(--sl-color-blue);
+   border: 1px solid var(--sl-color-blue);
+}
+
+.badges[data-badge='outdated'] {
+   background-color: var(--sl-color-red);
+   border: 1px solid var(--sl-color-red);
+}
+
+.badges[data-badge='alpha'] {
+   background-color: var(--sl-color-yellow);
+   border: 1px solid var(--sl-color-yellow);
+}
