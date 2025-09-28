@@ -26,8 +26,8 @@ export function Header() {
                <HeaderNav>
                   <HeaderNav.Link text="Home" href="/" />
                   <HeaderNav.Menu text="Soluções" activePath="/solutions" >
-                     <HeaderNav.MenuLink href="/solutions/scriptbot" title="ScriptBot" desc="Ferramente de automação de estratégias." icon={<Bot />} />
-                     <HeaderNav.MenuLink href="/solutions" title="Ver mais" />
+                     <HeaderNav.MenuLink href="https://sb.botrading.net" title="ScriptBot" desc="Ferramente de automação de estratégias." icon={<Bot />} />
+                     <HeaderNav.MenuLink href="/solutions" title="Ver todas" />
                   </HeaderNav.Menu>
                   <HeaderNav.Link text="Central de Suporte" href="/help" />
                </HeaderNav>
@@ -38,8 +38,8 @@ export function Header() {
                      <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon />} />
                      <HamburgerMenu.Divider />
                      <HamburgerMenu.Accordion title="Soluções" icon={<Lightbulb />}>
-                        <HamburgerMenu.Link title="ScriptBot" href="/solutions/scriptbot" />
-                        <HamburgerMenu.Link title="Ver mais" href="/solutions" />
+                        <HamburgerMenu.Link title="ScriptBot" href="https://sb.botrading.net" />
+                        <HamburgerMenu.Link title="Ver todas" href="/solutions" />
                      </HamburgerMenu.Accordion>
                      <HamburgerMenu.Divider />
                      <HamburgerMenu.Link title="Central de Suporte" href="/help" icon={<Headset />} />

@@ -43,6 +43,7 @@
    font-size: var(--sl-font-size-base);
    font-weight: 300;
    color: var(--sl-color-white);
+   line-height: 22px;
 }
 
 /**

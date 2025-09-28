@@ -15,8 +15,8 @@ export interface IBadgeProps {
 }
 export function Badge({ type, children }: IBadgeProps) {
    return (
-      <div className={styles.badges} data-badge={type}>
+      <span className={styles.badges} data-badge={type}>
          <p className={styles.badge}>{children}</p>
-      </div>
+      </span>
    );
 }

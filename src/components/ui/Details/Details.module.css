@@ -13,18 +13,31 @@
    list-style: none;
    cursor: pointer;
    user-select: none;
+   gap: 1rem;
+
+   padding: 8px 1rem;
+   background-color: var(--sl-color-gray-9);
+   border: 1px solid var(--sl-color-gray-6);
+   border-radius: 8px;
+}
+
+.details[open] .detailsTrigger {
+   border-radius: 8px 8px 0 0;
+   background-color: var(--sl-color-gray-8);
 }
 
 .detailsTriggerTitle {
    color: var(--sl-color-white);
-   font-size: var(--sl-font-size-xxlarge);
-   font-weight: 600;
+   font-size: var(--sl-font-size-xlarge);
+   font-weight: 400;
 }
 
 /**
  * Trigger Icon
 */
 .detailsTriggerIcon {
+   display: flex;
+   flex-shrink: 0;
    color: var(--sl-color-gray-1);
    width: 30px;
    height: 30px;
@@ -32,7 +45,6 @@
 }
 
 .details[open] .detailsTriggerIcon {
-   /* color: var(--sl-color-accent-high); */
    transform: rotate(180deg);
    transition: transform 0.2s ease-in-out;
 }
@@ -41,5 +53,9 @@
  * Content
 */
 .detailsContent {
-   margin-top: 1rem;
+   padding: 2rem 0.3125rem 2rem 0.3125rem;
+
+   border: 1px solid var(--sl-color-gray-6);
+   border-top: none;
+   border-radius: 0 0 8px 8px;
 }

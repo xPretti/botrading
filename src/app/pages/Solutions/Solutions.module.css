@@ -2,6 +2,45 @@
    display: block;
 }
 
+.solutionsHeroSection {
+   border-bottom: 1px solid var(--sl-color-header-border);
+}
+
+/**
+ * Solutions
+*/
+.solutionsHeaderTitle,
+.solutionsHeaderDescription {
+   text-align: left;
+}
+
+.solutionsHeaderTitle {
+   font-size: var(--sl-font-size-xxxlarge);
+   font-weight: 700;
+   color: var(--sl-color-white);
+}
+
+.solutionsHeaderDescription {
+   font-size: var(--sl-font-size-base);
+   font-weight: 300;
+   color: var(--sl-color-white);
+   margin-top: 1rem;
+   line-height: 22px;
+}
+
+.outdated {
+   background-color: var(--sl-color-accent-high);
+   border-radius: 8px;
+   padding: 2px 4px;
+   font-size: var(--sl-font-size-verysmall);
+   font-weight: 500;
+   color: var(--sl-color-white-real);
+}
+
+.solutionsDetails {
+   margin-top: 2rem;
+}
+
 .solutionsList {
    display: flex;
    justify-content: space-evenly;

@@ -14,13 +14,13 @@ const LINKS = {
 const FOOTER_LINKS: FooterLinksType[] = [
    {
       category: "PRODUTOS", links: [
-         { name: "Robôs", url: "#" },
-         { name: "Indicadores", url: "#" },
+         { name: "Robôs", url: "/solutions" },
+         { name: "Indicadores", url: "/solutions" },
       ]
    },
    {
       category: "RECURSOS", links: [
-         { name: "Documentações", url: "#" },
+         { name: "Documentações", url: "/solutions" },
       ]
    },
    {

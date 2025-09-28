@@ -1,7 +1,7 @@
 :root {
    /* LAYOUT */
-   --sl-page-max-width: 1300px;
-   --sl-page-max-width-footer: 1300px; /*1435px; */
+   --sl-page-max-width: 1400px;
+   --sl-page-max-width-footer: 1400px; /*1435px; */
    --sl-page-max-width-hero: 1300px;
    --sl-page-padding: 90px;
    --sl-page-grid:
@@ -102,6 +102,8 @@
    --sl-color-gray-6: #353d4c;
    --sl-color-gray-7: #252d38;
    --sl-color-gray-8: #1f2630;
+   --sl-color-gray-9: #1c212a;
+   --sl-color-gray-10: #181c24;
    --sl-color-black: #1c212a;
 
    --sl-color-header-bg: #1b2028;

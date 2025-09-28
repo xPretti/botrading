@@ -1,8 +1,10 @@
 .badges {
-   display: block;
+   display: inline-block;
    padding: 3px 6px;
    border-radius: 8px;
    user-select: none;
+   width: fit-content;
+   height: fit-content;
 }
 
 .badge {
