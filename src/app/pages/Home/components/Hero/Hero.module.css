@@ -106,12 +106,12 @@
 .heroNewsButton {
    font-size: var(--sl-font-size-small);
    font-weight: 600;
-   color: var(--sl-color-white);
+   color: var(--sl-color-white-real);
    box-shadow: var(--sl-drop-shadow), var(--sl-inner-shadow);
 
    background-color: var(--sl-color-red-high);
    padding: 0.625rem;
-   border: 1px solid var(--sl-color-red);
+   border: 1px solid var(--sl-color-red-low);
    height: 100%;
    text-align: center;
    text-decoration: none;
@@ -132,7 +132,7 @@
 }
 @media (hover: hover) and (pointer: fine) {
    .heroNewsButton:hover {
-      background-color: var(--sl-color-red);
+      background-color: var(--sl-color-red-low);
       box-shadow: none;
    }
 }

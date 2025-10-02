@@ -75,7 +75,7 @@
    background-color: var(--sl-color-discord);
    border: 1px solid var(--sl-color-discord);
    box-shadow: var(--sl-drop-shadow);
-   color: var(--sl-color-white);
+   color: var(--sl-color-white-real);
    font-size: var(--sl-font-size-base);
    font-weight: 500;
    padding: 0.625rem 1.25rem;
