@@ -19,7 +19,7 @@
    left: 0;
    top: 0;
    width: 100vw;
-   height: 100vh;
+   height: 100dvh;
    background-color: color-mix(in srgb, var(--sl-color-header-bg) 100%, transparent 80%);
 }
 
@@ -29,7 +29,7 @@
    flex-direction: column;
    width: 75%;
    max-width: 500px;
-   height: 100vh;
+   height: 100dvh;
    background-color: var(--sl-color-header-bg);
    box-shadow: var(--sl-drop-shadow);
    border-right: 1px solid var(--sl-color-header-border);
