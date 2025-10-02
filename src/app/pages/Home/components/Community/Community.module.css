@@ -15,7 +15,7 @@
    max-width: var(--sl-page-max-width);
    width: 100%;
    padding: 1.5625rem;
-   background-color: var(--sl-color-bg);
+   background-color: var(--sl-color-discord-bg);
    border: 1px solid var(--sl-color-discord-low);
    box-shadow: var(--sl-drop-shadow-medium), var(--sl-inner-shadow);
    border-radius: 0.9375rem;
@@ -55,7 +55,7 @@
 .communityHeaderDescription {
    margin-top: 1.25rem;
    font-size: var(--sl-font-size-base);
-   font-weight: 300;
+   font-weight: 400;
    color: var(--sl-color-white);
 }
 
@@ -87,8 +87,8 @@
 }
 
 .communityJoinButton:hover {
-   background-color: var(--sl-color-discord-high);
-   border: 1px solid var(--sl-color-discord-high);
+   background-color: var(--sl-color-discord-low);
+   border: 1px solid var(--sl-color-discord-low);
 }
 
 /* Tablet */

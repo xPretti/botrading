@@ -19,6 +19,7 @@
 }
 .link:hover {
    background-color: var(--sl-color-gray-7);
+   border: 1px solid var(--sl-color-gray-6);
 }
 
 .linkWrapper:has(.link.active) {

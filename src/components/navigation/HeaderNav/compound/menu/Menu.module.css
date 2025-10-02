@@ -35,6 +35,7 @@
 .headerNavItemContent:hover .headerNavTrigger,
 .headerNavTrigger:hover {
    background-color: var(--sl-color-gray-7);
+   border: 1px solid var(--sl-color-gray-6);
 }
 
 /* Item */

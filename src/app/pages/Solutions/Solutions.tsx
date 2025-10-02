@@ -4,11 +4,15 @@ import { Section } from "@/components/ui/Section/Section";
 import { ProductCard } from "@/components/ui/Cards/ProductCard/ProductCard";
 import { Badge } from "@/components/ui/Badge/Badge";
 import { Divider } from "@/components/ui/Divider/Divider";
+import { getThemeValue } from "@/utils/theme-utils";
+import { useTheme } from "@/hooks/useTheme";
 
 //<span className={styles.outdated}>DESCONTINUADO</span>
 
 
 export function Solutions() {
+
+   const { theme } = useTheme();
 
    return (
       <div className={styles.solutions}>
@@ -30,7 +34,7 @@ export function Solutions() {
                <ul className={styles.solutionsList}>
                   <li>
                      <ProductCard
-                        img="/ScriptBot.png"
+                        img={getThemeValue(theme, "/ScriptBot-red.png", "/ScriptBot.png")}
                         title="ScriptBot"
                         description="Ferramente de automação de estratégias."
                         version="v2.0"
@@ -56,8 +60,6 @@ export function Solutions() {
                   </li>
                </ul>
             </div>
-            {/* <Details title="Robôs para Metatrader 5" open={true} className={styles.solutionsDetails}>
-            </Details> */}
          </Section>
       </div>
    );

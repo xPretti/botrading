@@ -17,7 +17,7 @@
 .subtitle {
    font-size: var(--sl-font-size-large);
    color: var(--sl-color-gray-2);
-   font-weight: 300;
+   font-weight: 400;
    text-shadow: var(--sl-drop-shadow);
    text-align: center;
 }
