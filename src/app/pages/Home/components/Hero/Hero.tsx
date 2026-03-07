@@ -1,6 +1,5 @@
 import { ChevronDown, ExternalLink } from "lucide-react";
 import styles from "./Hero.module.css";
-import { Frame } from "@/components/ui/Frame/Frame";
 import { useDevice } from "@/hooks/useDevice";
 import { DEVICE } from "@/types/device-type";
 import { useTheme } from "@/hooks/useTheme";
@@ -32,18 +31,18 @@ export function Hero() {
             {
                device == DEVICE.DESKTOP &&
                <div className={styles.heroRight}>
-                  <Frame className={styles.heroFrame}>
-                     <img src="/Candle.png" alt="Logo" width="100%" height="100%" />
-                     <Frame className={`${styles.heroFrameItem} ${styles.heroFrameItem1}`}>
-                        <img src="/Mql5-Logo.png" alt="Logo" width={100} height={100} title="MetaTrader 5" />
-                     </Frame>
-                     <Frame className={`${styles.heroFrameItem} ${styles.heroFrameItem3}`}>
+                  <div className={styles.heroFrame}>
+                     <img className={styles.heroFrameCandle} src="/Candle.png" alt="Logo" width="100%" height="100%" />
+                     <div className={`${styles.heroFrameItem} ${styles.heroFrameItem1}`}>
+                        <img src="/Botrading.png" alt="Logo" width={120} height={120} title="Botrading" />
+                     </div>
+                     <div className={`${styles.heroFrameItem} ${styles.heroFrameItem2}`}>
                         <img src={theme == THEME.DARK ? "/ScriptBot.png" : "/ScriptBot-red.png"} alt="Logo" width={116} height={116} title="ScriptBot" />
-                     </Frame>
-                     <Frame className={`${styles.heroFrameItem} ${styles.heroFrameItem2}`}>
-                        <img src="/Botrading.png" alt="Logo" width={130} height={130} title="Botrading" />
-                     </Frame>
-                  </Frame>
+                     </div>
+                     <div className={`${styles.heroFrameItem} ${styles.heroFrameItem3}`}>
+                        <img src="/Mql5-Logo.png" alt="Logo" width={116} height={116} title="MetaTrader 5" />
+                     </div>
+                  </div>
                </div>
             }
          </div>
