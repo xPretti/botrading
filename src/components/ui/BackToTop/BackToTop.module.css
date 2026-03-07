@@ -3,13 +3,12 @@
    position: fixed;
    bottom: 5rem;
    right: 5rem;
-   width: fit-content;
-   height: fit-content;
    padding: 8px;
-   z-index: 1000;
+   z-index: 100;
    cursor: pointer;
    border-radius: 50%;
    box-shadow: var(--sl-drop-shadow-medium);
+   border: 1px solid var(--sl-color-gray-5);
 }
 
 .backToTop:hover {
