@@ -25,8 +25,8 @@ const FOOTER_LINKS: FooterLinksType[] = [
    },
    {
       category: "EMPRESA", links: [
-         { name: "Sobre", url: "#" },
-         { name: "Contato", url: "#" },
+         { name: "Sobre", url: "/help" },
+         { name: "Contato", url: "/help" },
       ]
    }
 ];

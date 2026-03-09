@@ -23,10 +23,29 @@
    gap: 45px;
 }
 
+.discordHeaderContent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+
+.discordHeaderTitleAndMembers {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+}
 .discordTitle {
    font-size: var(--sl-font-size-xxxlarge);
    font-weight: 700;
    color: var(--sl-color-discord);
+}
+
+.discordMembers {
+   font-size: var(--sl-font-size-base);
+   color: var(--sl-color-gray-1);
 }
 .discordDescription {
    font-size: var(--sl-font-size-base);
@@ -50,7 +69,6 @@
    cursor: pointer;
    text-decoration: none;
    width: 100%;
-   margin: auto;
    box-shadow: var(--sl-drop-shadow);
    transition: background-color 0.1s ease-in-out;
    user-select: none;
@@ -108,5 +126,17 @@
 @media (max-width: 610px) {
    .channelsList li {
       width: 100%;
+   }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+   .discordHeaderContent {
+      flex-direction: row;
+      gap: 1.25rem;
+   }
+
+   .discordButton {
+      max-width: 400px;
    }
 }

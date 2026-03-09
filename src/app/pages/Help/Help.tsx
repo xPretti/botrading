@@ -4,6 +4,7 @@ import { PageTitle } from "@/components/ui/PageTitle/PageTitle";
 import { SupportCard } from "@/components/ui/Cards/SupportCard/SupportCard";
 import { useTheme } from "@/hooks/useTheme";
 import { getThemeValue } from "@/utils/theme-utils";
+import { useDiscordInvite } from "@/hooks/useDiscordInvite";
 
 export type HelpLinkType = {
    type: "link" | "text";
@@ -49,6 +50,8 @@ const channels: HelpLinkType[] = [
 
 export function Help() {
 
+   const { online, members, loading } = useDiscordInvite("AdVsTqVDE7");
+
    const { theme } = useTheme();
 
    return (
@@ -59,10 +62,24 @@ export function Help() {
          <Section className={styles.discordSection}>
             <div className={styles.discordContent}>
                <div className={styles.discordHeader}>
-                  <h2 className={styles.discordTitle}>Discord</h2>
+                  <div className={styles.discordHeaderContent}>
+                     <div className={styles.discordHeaderTitleAndMembers}>
+                        <h2 className={styles.discordTitle}>Discord</h2>
+                        <span className={styles.discordMembers}>
+                           {loading ? "" : `${online} online • ${members} membros`}
+                        </span>
+                     </div>
+                     <a
+                        className={styles.discordButton}
+                        href="https://discord.botrading.net"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        Juntar-se à comunidade
+                     </a>
+                  </div>
                   <p className={styles.discordDescription}>Junte-se à comunidade Botrading no Discord e aproveite suporte rápido, troca de ideias com outros traders, compartilhamento de estratégias, acesso a downloads exclusivos, atualizações de produtos e muito mais!</p>
                </div>
-               <a className={styles.discordButton} href="https://discord.botrading.net" target="_blank" rel="noreferrer">Juntar-se à comunidade</a>
             </div>
          </Section>
          <Section classNameContent={styles.channelsSection} margin="40px 0">

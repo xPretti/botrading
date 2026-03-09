@@ -16,6 +16,7 @@
    text-wrap: nowrap;
    border-radius: 8px;
    user-select: none;
+   border: 1px solid transparent;
 }
 .link:hover {
    background-color: var(--sl-color-gray-7);
