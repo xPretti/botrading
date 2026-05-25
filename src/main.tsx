@@ -41,19 +41,17 @@ const router = createBrowserRouter([
    },
 ]);
 
-// Inicializa a renderização do React
+// Inicializa o router
 createRoot(document.getElementById('root')!).render(
    <StrictMode>
       <RouterProvider router={router} />
    </StrictMode>,
 );
 
-// Aguarda o navegador baixar e processar todas as fontes declaradas no CSS
+// Aguarda o carregamento das fontes
 document.fonts.ready.then(() => {
    requestAnimationFrame(() => {
       const root = document.getElementById('root');
-
-      // O React já renderizou e as fontes estão prontas. Pode exibir!
       root?.classList.add('loaded');
    });
 });

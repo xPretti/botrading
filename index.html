@@ -44,9 +44,8 @@
       />
 
       <style>
-         /* Definimos a cor base aqui para o navegador já abrir no tom certo */
          :root {
-            --sl-color-bg: #121212; /* Substitua pela cor exata do fundo do seu site */
+            --sl-color-bg: #121212;
          }
 
          html,
@@ -56,13 +55,11 @@
             background: var(--sl-color-bg);
          }
 
-         /* O site começa invisível */
          #root {
             opacity: 0;
             transition: opacity 180ms ease;
          }
 
-         /* Classe adicionada via JS quando tudo estiver pronto */
          #root.loaded {
             opacity: 1;
          }
