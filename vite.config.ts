@@ -9,4 +9,8 @@ export default defineConfig({
          '@': '/src',
       },
    },
+   build: {
+      cssCodeSplit: false,
+      chunkSizeWarningLimit: 1000,
+   },
 });

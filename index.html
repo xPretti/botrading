@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
    <head>
       <meta charset="UTF-8" />
       <link
@@ -12,9 +12,66 @@
          content="width=device-width, initial-scale=1.0"
       />
       <title>Botrading</title>
+
+      <link
+         rel="preload"
+         href="/fonts/Inter/Inter18pt-Regular.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
+      <link
+         rel="preload"
+         href="/fonts/Inter/Inter18pt-Bold.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
+
+      <link
+         rel="preload"
+         href="/fonts/Poppins/Poppins-Regular.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
+      <link
+         rel="preload"
+         href="/fonts/Poppins/Poppins-Bold.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
+
+      <style>
+         /* Definimos a cor base aqui para o navegador já abrir no tom certo */
+         :root {
+            --sl-color-bg: #121212; /* Substitua pela cor exata do fundo do seu site */
+         }
+
+         html,
+         body {
+            margin: 0;
+            padding: 0;
+            background: var(--sl-color-bg);
+         }
+
+         /* O site começa invisível */
+         #root {
+            opacity: 0;
+            transition: opacity 180ms ease;
+         }
+
+         /* Classe adicionada via JS quando tudo estiver pronto */
+         #root.loaded {
+            opacity: 1;
+         }
+      </style>
    </head>
+
    <body>
       <div id="root"></div>
+
       <script
          type="module"
          src="/src/main.tsx"
