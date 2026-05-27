@@ -99,6 +99,9 @@
    text-align: center;
    text-decoration: none;
 }
+.heroNewsButton span {
+   color: var(--sl-color-white-real);
+}
 
 .heroNewsLabel {
    display: flex;
