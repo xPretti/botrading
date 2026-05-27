@@ -15,7 +15,7 @@
 }
 
 .linkTitle {
-   font-size: var(--sl-font-size-medium);
-   font-weight: 400;
+   font-size: var(--sl-font-size-base);
+   font-weight: 300;
    color: var(--sl-color-white);
 }
