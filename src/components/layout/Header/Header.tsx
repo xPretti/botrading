@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 
-import { Bot, Headset, HomeIcon, Lightbulb } from "lucide-react";
+import { Headset, HomeIcon, Lightbulb } from "lucide-react";
 import { DEVICE } from "@/types/device-type";
 import { useDevice } from "@/hooks/useDevice";
 import { HeaderNav } from "@/components/navigation/HeaderNav/HeaderNav";
