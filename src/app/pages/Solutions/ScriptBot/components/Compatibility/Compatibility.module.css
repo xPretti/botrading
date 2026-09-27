@@ -7,6 +7,6 @@
 }
 
 .compatibilityText {
-   font-size: var(--sl-font-size-medium);
+   font-size: var(--sl-font-size-base);
    color: var(--sl-color-gray-2);
 }

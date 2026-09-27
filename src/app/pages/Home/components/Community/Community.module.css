@@ -14,7 +14,7 @@
    flex-direction: column;
    max-width: var(--sl-page-max-width);
    width: 100%;
-   padding: 1.5625rem;
+   padding: 3.5625rem;
    background-color: var(--sl-color-discord-bg);
    border: 1px solid var(--sl-color-discord-low);
    box-shadow: var(--sl-drop-shadow-medium), var(--sl-inner-shadow);
