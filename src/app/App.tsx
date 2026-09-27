@@ -9,10 +9,8 @@ function App() {
    return (
       <AppProviders>
          <div className={styles.app}>
-            <div className={styles.appContent}>
-               <BackToTop />
-               <Outlet />
-            </div>
+            <BackToTop />
+            <Outlet />
          </div>
       </AppProviders>
    );
