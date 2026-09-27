@@ -11,7 +11,7 @@
    text-align: center;
    margin-bottom: 2rem;
 
-   background: linear-gradient(135deg, var(--sl-color-bg), var(--sl-color-gray-8));
+   background: linear-gradient(135deg, var(--sl-color-section), var(--sl-color-gray-8));
    border-radius: 0.625rem;
    padding: 3rem;
    box-shadow: var(--sl-drop-shadow-large);

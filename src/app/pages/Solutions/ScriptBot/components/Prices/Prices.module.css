@@ -10,17 +10,210 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   text-align: center;
 }
 
-/* Tablet */
+/* ---------- Container dos cards ---------- */
+
+.pricesCards {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 1.5rem;
+   width: 100%;
+   margin-top: 2.5rem;
+}
+
+/* ---------- Card do plano (independente, com borda própria) ---------- */
+
+.priceCard {
+   display: flex;
+   flex-direction: column;
+   border-radius: 0.75rem;
+   border: 1px solid var(--sl-color-header-border);
+   background: var(--sl-color-gray-8);
+   box-shadow: var(--sl-drop-shadow-large);
+}
+
+.priceCardRecommended {
+   border-color: var(--sl-color-accent);
+}
+
+/* ---------- Header do plano ---------- */
+
+.planHeader {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   text-align: center;
+   padding: 1.75rem 1.5rem 1.5rem;
+   height: 130px;
+}
+
+.planBadge {
+   position: absolute;
+   top: -0.65rem;
+   padding: 0.3rem 0.85rem;
+   border-radius: 999px;
+   background: var(--sl-color-accent);
+   color: var(--sl-color-white-absolute);
+   font-size: 0.7rem;
+   font-weight: 700;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+}
+
+.planName {
+   font-weight: 700;
+   font-size: 1.05rem;
+   color: var(--sl-color-white);
+}
+
+.planPriceBoxPlain {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 0.5rem;
+}
+
+.planPriceBox {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 0.5rem;
+}
+
+.planPrice {
+   font-size: 1.75rem;
+   font-weight: 800;
+   color: var(--sl-color-white);
+   line-height: 1.2;
+}
+
+.planPriceSuffix {
+   font-size: 0.8rem;
+   color: var(--sl-color-gray-3);
+}
+
+.planPriceNote {
+   font-size: 0.8rem;
+   color: var(--sl-color-gray-3);
+   margin-top: 0.15rem;
+}
+
+/* ---------- Lista de features dentro do card ---------- */
+
+.priceCardFeatures {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   padding: 0 1.5rem;
+   border-top: 1px solid var(--sl-color-header-border);
+}
+
+.priceCardFeatureRow {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   padding: 0.85rem 0;
+   border-bottom: 1px solid var(--sl-color-header-border);
+}
+
+.priceCardFeatureRow:last-child {
+   border-bottom: none;
+}
+
+.priceCardFeatureLabel {
+   font-size: 0.88rem;
+   color: var(--sl-color-gray-2);
+   text-align: left;
+}
+
+/* ---------- Valores das features ---------- */
+/* Obs: não existe token de verde no design system atual, usei um hex fixo
+   só para o destaque "positivo". Troque por var(--sl-color-accent) se
+   preferir manter tudo dentro da paleta vermelha do site. */
+
+.priceFeatureCheck {
+   color: #22c55e;
+}
+
+.priceFeatureMinus {
+   color: var(--sl-color-gray-4);
+}
+
+.priceFeatureValue {
+   font-size: 0.9rem;
+   color: var(--sl-color-gray-3);
+}
+
+.priceFeatureValueHighlight {
+   font-size: 0.9rem;
+   font-weight: 700;
+   color: #22c55e;
+}
+
+/* ---------- Botões ---------- */
+
+.priceButton {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   width: 100%;
+   padding: 0.85rem 1.5rem;
+   border-radius: 0.5rem;
+   font-weight: 700;
+   font-size: 0.95rem;
+   text-decoration: none;
+   transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+}
+
+.priceButton:hover {
+   opacity: 0.85;
+}
+
+.priceButtonOutline {
+   background: transparent;
+   color: var(--sl-color-white);
+   border: 1px dashed var(--sl-color-accent);
+}
+
+.priceButtonFilled {
+   background: var(--sl-color-accent-high);
+   color: var(--sl-color-white-absolute);
+   border: 1px solid transparent;
+}
+
+.priceCard > .priceButton {
+   margin: 1.5rem;
+   width: calc(100% - 3rem);
+}
+
+/* Tablet e acima: cards lado a lado */
 @media (min-width: 1024px) {
    .pricesContent {
       display: flex;
       align-items: start;
       justify-content: start;
    }
+
    .pricesCards {
-      justify-content: space-between;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 2rem;
    }
+
+   .priceCard {
+      flex: 1;
+   }
+}
+
+.priceCardButton {
+   margin: 20px;
 }

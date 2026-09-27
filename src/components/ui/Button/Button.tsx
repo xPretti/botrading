@@ -8,7 +8,9 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    variant?: ButtonVariant;
    fontSize?: string | number;
    fontWeight?: string | number;
+   handleClick?: () => void;
    children?: ReactNode;
+   fullWidth?: boolean;
 }
 
 export function Button({
@@ -16,9 +18,11 @@ export function Button({
    variant = "primary",
    fontSize,
    fontWeight,
+   fullWidth = false, // 1. Desestruturado com valor padrão
    children,
    className = "",
    style,
+   handleClick,
    ...rest
 }: IButtonProps) {
    const getVariantClass = () => {
@@ -37,11 +41,17 @@ export function Button({
 
    return (
       <button
+         onClick={handleClick}
          className={`${styles.baseContainer} ${getVariantClass()} ${className}`}
-         style={{ ...style, fontSize: fontSize ? fontSize : undefined, fontWeight: fontWeight ? fontWeight : undefined }}
+         style={{
+            fontSize,
+            fontWeight,
+            width: fullWidth ? "100%" : "fit-content", // 2. Sintaxe ternária corrigida
+            ...style,
+         }}
          {...rest}
       >
-         {children ? children : title}
+         {children ?? title}
       </button>
    );
 }
