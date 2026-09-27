@@ -34,7 +34,7 @@
    padding: 2px 4px;
    font-size: var(--sl-font-size-verysmall);
    font-weight: 500;
-   color: var(--sl-color-white-real);
+   color: var(--sl-color-white-absolute);
 }
 
 .solutionsDivider {

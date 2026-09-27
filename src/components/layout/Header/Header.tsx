@@ -24,7 +24,7 @@ export function Header() {
                   <HeaderNav.Link text="Home" href="/" />
                   <HeaderNav.Menu text="Soluções" activePath="/solutions" >
                      <HeaderNav.MenuLink
-                        href="https://sb.botrading.net"
+                        href="/solutions/scriptbot"
                         title="ScriptBot v2.0"
                      />
 

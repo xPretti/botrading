@@ -38,7 +38,7 @@
    --sl-color-discord-bg: var(--sl-color-bg);
 
    /* REAL COLORS */
-   --sl-color-white-real: #ffffff;
+   --sl-color-white-absolute: #ffffff;
 
    /* FONTES */
    --sl-font-family-accent: 'Poppins', sans-serif;
@@ -54,6 +54,7 @@
    --sl-font-size-xxlarge: 2rem;
    --sl-font-size-xxxlarge: 2.5rem;
    --sl-font-size-xxxxlarge: 3rem;
+   --sl-font-size-xxxxxlarge: 3.5rem;
 
    /* HERO */
    --sl-hero-font-size-title: 4.375rem;
@@ -90,7 +91,7 @@
    --sl-color-product-card-border: var(--sl-color-gray-5);
 
    --sl-page-grid:
-      repeating-linear-gradient(90deg, #f5f5f5 0 1px, transparent 1px 40.5px), repeating-linear-gradient(0deg, #f5f5f5 0 1px, transparent 1px 40.5px);
+      repeating-linear-gradient(90deg, #f5f5f586 0 1px, transparent 1px 40.5px), repeating-linear-gradient(0deg, #f5f5f586 0 1px, transparent 1px 40.5px);
 
    /* Colors */
    --sl-color-blue-high: #5b6bff;
@@ -151,7 +152,7 @@
    --sl-color-product-card-border: var(--sl-color-gray-5);
 
    --sl-page-grid:
-      repeating-linear-gradient(90deg, #222833 0 1px, transparent 1px 40.5px), repeating-linear-gradient(0deg, #222833 0 1px, transparent 1px 40.5px);
+      repeating-linear-gradient(90deg, #2228335e 0 1px, transparent 1px 40.5px), repeating-linear-gradient(0deg, #2228335e 0 1px, transparent 1px 40.5px);
 
    --sl-color-header-bg: #1b2028;
    --sl-color-header-border: var(--sl-color-gray-5);

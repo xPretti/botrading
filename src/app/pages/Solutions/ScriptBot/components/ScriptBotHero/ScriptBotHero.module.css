@@ -1,0 +1,200 @@
+/**
+ * Conteudo
+ */
+.heroContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   gap: 2rem;
+}
+
+/**
+ * Left
+ */
+.heroLeft {
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+   width: 100%;
+}
+
+@media (min-width: 1024px) {
+   .heroLeft {
+      width: 60%;
+   }
+}
+
+/**
+ * Right
+ */
+.heroRight {
+   max-width: 450px;
+   max-height: 450px;
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.heroFrame {
+   width: 100%;
+   height: 100%;
+}
+
+.heroFrameImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: drop-shadow(var(--sl-drop-shadow-medium));
+}
+
+/**
+ * Tags / Badges do Topo
+ */
+.heroNews {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   flex-wrap: wrap;
+   user-select: none;
+}
+
+.heroNewsPulse {
+   width: 0.5rem;
+   height: 0.5rem;
+   border-radius: 50%;
+   background-color: var(--sl-color-accent-high);
+   box-shadow: var(--sl-drop-shadow);
+   margin-right: 0.5rem;
+   animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+   0% {
+      box-shadow: 0 0 0 0px color-mix(in srgb, var(--sl-color-accent-high) 100%, transparent 5%);
+   }
+   100% {
+      box-shadow: 0 0 0 7px color-mix(in srgb, var(--sl-color-accent-high) 0%, transparent 100%);
+   }
+}
+
+.heroNewsLabel {
+   font-size: var(--sl-font-size-small);
+   font-weight: 500;
+   color: var(--sl-color-gray-1);
+   background-color: var(--sl-color-gray-7);
+   padding: 0.35rem 1rem;
+   border: 1px solid var(--sl-color-gray-5);
+   border-radius: 50px;
+   text-align: center;
+   box-shadow: var(--sl-drop-shadow);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
+/**
+ * Title & Subtitle
+ */
+.heroTitles {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+}
+
+.heroTitlesContent {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.heroTitle {
+   font-size: var(--sl-font-size-xxxxxlarge);
+   font-weight: 800;
+   color: var(--sl-color-white);
+   text-shadow: var(--sl-drop-shadow);
+   line-height: 1.1;
+   text-align: center;
+}
+
+.heroTitleSub {
+   font-size: var(--sl-font-size-xlarge);
+   font-weight: 700;
+   color: var(--sl-color-accent-high);
+   text-shadow: var(--sl-drop-shadow);
+   line-height: 1.2;
+   text-align: center;
+}
+
+.heroDescription {
+   font-size: var(--sl-font-size-base);
+   font-weight: 400;
+   color: var(--sl-color-gray-2);
+   line-height: 1.6;
+   text-align: center;
+}
+
+.heroDescription strong {
+   color: var(--sl-color-white);
+   font-weight: 600;
+}
+
+/**
+ * Área de Ação (Botões e Nota)
+ */
+.heroActions {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.heroButtonsGroup {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+
+.heroNote {
+   font-size: var(--sl-font-size-small);
+   color: var(--sl-color-gray-3);
+   text-align: center;
+}
+
+.heroNote strong {
+   color: var(--sl-color-gray-2);
+}
+
+/**
+ * Media Queries (Desktop)
+ */
+@media (min-width: 1024px) {
+   .heroRight {
+      display: block;
+   }
+
+   .heroContent {
+      justify-content: space-between;
+   }
+
+   .heroTitle {
+      text-align: center;
+   }
+
+   .heroNews,
+   .heroButtonsGroup {
+      justify-content: flex-start;
+   }
+
+   .heroTitle,
+   .heroTitleSub,
+   .heroDescription,
+   .heroNote {
+      text-align: left;
+   }
+}

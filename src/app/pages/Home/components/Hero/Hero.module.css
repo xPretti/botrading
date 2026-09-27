@@ -89,7 +89,7 @@
 .heroNewsButton {
    font-size: var(--sl-font-size-small);
    font-weight: 600;
-   color: var(--sl-color-white-real);
+   color: var(--sl-color-white-absolute);
    box-shadow: var(--sl-drop-shadow), var(--sl-inner-shadow);
 
    background-color: var(--sl-color-red-high);
@@ -100,7 +100,7 @@
    text-decoration: none;
 }
 .heroNewsButton span {
-   color: var(--sl-color-white-real);
+   color: var(--sl-color-white-absolute);
 }
 
 .heroNewsLabel {

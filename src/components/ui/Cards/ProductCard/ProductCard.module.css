@@ -71,7 +71,7 @@
    background-color: var(--sl-color-accent);
    border: 1px solid var(--sl-color-accent);
    box-shadow: var(--sl-drop-shadow);
-   color: var(--sl-color-white-real);
+   color: var(--sl-color-white-absolute);
    font-size: var(--sl-font-size-medium);
    font-weight: 400;
    cursor: pointer;

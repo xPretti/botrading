@@ -38,6 +38,7 @@
    align-items: center;
    gap: 0.9375rem;
    text-decoration: none;
+   user-select: none;
 }
 
 .headerLogo img {
