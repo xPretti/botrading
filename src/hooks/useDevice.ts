@@ -22,5 +22,5 @@ export const useDevice = () => {
       };
    }, []);
 
-   return device;
+   return { device, isMobile: device === DEVICE.MOBILE || device === DEVICE.TABLET, isDesktop: device === DEVICE.DESKTOP };
 };

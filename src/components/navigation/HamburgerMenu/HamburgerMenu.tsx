@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Link } from "./compound/Link/Link";
 import { Accordion } from "./compound/Accordion/Accordion";
 import { Divider } from "./compound/Divider/Divider";
-import { ThemeToggle } from "@/features/ThemeToggle/ThemeToggle";
+import { ThemeToggle } from "@/components/ui/ThemeToggle/ThemeToggle";
 import { usePageScrollLock } from "@/hooks/usePageScrollLock";
 
 interface IHamburgerMenuProps {

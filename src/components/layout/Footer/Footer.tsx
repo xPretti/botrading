@@ -1,7 +1,6 @@
 import { Heart } from "lucide-react";
 import styles from "./Footer.module.css";
 import { useDevice } from "@/hooks/useDevice";
-import { DEVICE } from "@/types/device-type";
 import { FooterLinksGroup } from "./components/FooterLinksGroup";
 import type { FooterLinksType } from "@/types/footer-links-type";
 import { FooterLinksAccordion } from "./components/FooterLinksAccordion";
@@ -33,7 +32,7 @@ const FOOTER_LINKS: FooterLinksType[] = [
 
 export function Footer() {
 
-   const device = useDevice();
+   const { isMobile } = useDevice();
    const getCurrentYear = () => new Date().getFullYear();
 
    return (
@@ -48,7 +47,7 @@ export function Footer() {
                   </div>
                </div>
                <div className={styles.footerUpperRight}>
-                  {device == DEVICE.MOBILE
+                  {isMobile
                      ?
                      <FooterLinksAccordion links={FOOTER_LINKS} />
                      : <FooterLinksGroup links={FOOTER_LINKS} />}

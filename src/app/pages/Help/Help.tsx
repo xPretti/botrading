@@ -5,6 +5,7 @@ import { SupportCard } from "@/components/ui/Cards/SupportCard/SupportCard";
 import { useTheme } from "@/hooks/useTheme";
 import { getThemeValue } from "@/utils/theme-utils";
 import { useDiscordInvite } from "@/hooks/useDiscordInvite";
+import { DefaultPage } from "@/components/layout/DefaultPage/DefaultPage";
 
 export type HelpLinkType = {
    type: "link" | "text";
@@ -55,43 +56,45 @@ export function Help() {
    const { theme } = useTheme();
 
    return (
-      <div className={styles.help}>
-         <Section type="hero">
-            <PageTitle title="Central de Suporte" subtitle="Aqui você encontra os principais canais de suporte disponíveis para você." />
-         </Section>
-         <Section className={styles.discordSection}>
-            <div className={styles.discordContent}>
-               <div className={styles.discordHeader}>
-                  <div className={styles.discordHeaderContent}>
-                     <div className={styles.discordHeaderTitleAndMembers}>
-                        <h2 className={styles.discordTitle}>Discord</h2>
-                        <span className={styles.discordMembers}>
-                           {loading ? "" : `${online} online • ${members} membros`}
-                        </span>
+      <DefaultPage>
+         <div className={styles.help}>
+            <Section type="hero">
+               <PageTitle title="Central de Suporte" subtitle="Aqui você encontra os principais canais de suporte disponíveis para você." />
+            </Section>
+            <Section className={styles.discordSection}>
+               <div className={styles.discordContent}>
+                  <div className={styles.discordHeader}>
+                     <div className={styles.discordHeaderContent}>
+                        <div className={styles.discordHeaderTitleAndMembers}>
+                           <h2 className={styles.discordTitle}>Discord</h2>
+                           <span className={styles.discordMembers}>
+                              {loading ? "" : `${online} online • ${members} membros`}
+                           </span>
+                        </div>
+                        <a
+                           className={styles.discordButton}
+                           href="https://discord.botrading.net"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           Juntar-se à comunidade
+                        </a>
                      </div>
-                     <a
-                        className={styles.discordButton}
-                        href="https://discord.botrading.net"
-                        target="_blank"
-                        rel="noreferrer"
-                     >
-                        Juntar-se à comunidade
-                     </a>
+                     <p className={styles.discordDescription}>Junte-se à comunidade Botrading no Discord e aproveite suporte rápido, troca de ideias com outros traders, compartilhamento de estratégias, acesso a downloads exclusivos, atualizações de produtos e muito mais!</p>
                   </div>
-                  <p className={styles.discordDescription}>Junte-se à comunidade Botrading no Discord e aproveite suporte rápido, troca de ideias com outros traders, compartilhamento de estratégias, acesso a downloads exclusivos, atualizações de produtos e muito mais!</p>
                </div>
-            </div>
-         </Section>
-         <Section classNameContent={styles.channelsSection} margin="40px 0">
-            <h2 className={styles.channelsTitle}>Todos os canais de suporte</h2>
-            <ul className={styles.channelsList}>
-               {channels.map((channel) => (
-                  <li key={channel.title}>
-                     <SupportCard type={channel.type} img={getThemeValue(theme, channel.img, channel.imgDark)} title={channel.title} message={channel.message} url={channel.url} />
-                  </li>
-               ))}
-            </ul>
-         </Section>
-      </div>
+            </Section>
+            <Section classNameContent={styles.channelsSection} margin="40px 0">
+               <h2 className={styles.channelsTitle}>Todos os canais de suporte</h2>
+               <ul className={styles.channelsList}>
+                  {channels.map((channel) => (
+                     <li key={channel.title}>
+                        <SupportCard type={channel.type} img={getThemeValue(theme, channel.img, channel.imgDark)} title={channel.title} message={channel.message} url={channel.url} />
+                     </li>
+                  ))}
+               </ul>
+            </Section>
+         </div>
+      </DefaultPage>
    );
 }

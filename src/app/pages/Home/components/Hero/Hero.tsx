@@ -1,12 +1,11 @@
 import { ChevronDown, ExternalLink } from "lucide-react";
 import styles from "./Hero.module.css";
 import { useDevice } from "@/hooks/useDevice";
-import { DEVICE } from "@/types/device-type";
 import { useTheme } from "@/hooks/useTheme";
 import { THEME } from "@/types/theme-type";
 
 export function Hero() {
-   const device = useDevice();
+   const { isDesktop } = useDevice();
    const { theme } = useTheme();
 
    return (
@@ -29,7 +28,7 @@ export function Hero() {
                </div>
             </div>
             {
-               device == DEVICE.DESKTOP &&
+               isDesktop &&
                <div className={styles.heroRight}>
                   <div className={styles.heroFrame}>
                      <img className={styles.heroFrameCandle} src="/Candle.png" alt="Logo" width="100%" height="100%" />

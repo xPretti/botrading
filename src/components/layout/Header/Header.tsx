@@ -1,17 +1,14 @@
 import styles from "./Header.module.css";
 
 import { Headset, HomeIcon, Lightbulb } from "lucide-react";
-import { DEVICE } from "@/types/device-type";
 import { useDevice } from "@/hooks/useDevice";
 import { HeaderNav } from "@/components/navigation/HeaderNav/HeaderNav";
 import { HamburgerMenu } from "@/components/navigation/HamburgerMenu/HamburgerMenu";
-import { ThemeToggle } from "@/features/ThemeToggle/ThemeToggle";
+import { ThemeToggle } from "@/components/ui/ThemeToggle/ThemeToggle";
 import { CustomNavLink } from "@/components/ui/CustomNavLink/CustomNavLink";
 
 export function Header() {
-   const device = useDevice();
-
-   const isMobile = device == DEVICE.MOBILE || device == DEVICE.TABLET;
+   const { isMobile } = useDevice();
 
    return (
       <header className={styles.header}>

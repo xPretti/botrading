@@ -149,8 +149,7 @@
 /**
  * Responsividade
 */
-/* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
    .footerUpper {
       flex-direction: row;
       justify-content: space-between;
