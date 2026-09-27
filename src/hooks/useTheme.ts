@@ -1,4 +1,4 @@
-import { useThemeContext } from '../features/ThemeToggle/contexts/ThemeContext';
+import { useThemeContext } from '../contexts/ThemeContext';
 
 export const useTheme = () => {
    return useThemeContext();

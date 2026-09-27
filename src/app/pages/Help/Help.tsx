@@ -23,29 +23,29 @@ const channels: HelpLinkType[] = [
       title: "Discord",
       message: "Entrar na comunidade",
       url: "https://discord.botrading.net"
-   },
-   {
-      type: "text",
-      img: "/support/Whatsapp.png",
-      imgDark: "/support/Whatsapp.png",
-      title: "WhatsApp",
-      message: "(+55) 11 99999-9999"
-   },
-   {
-      type: "text",
-      img: "/support/Email.png",
-      imgDark: "/support/Email.png",
-      title: "E-mail",
-      message: "test@example.com"
-   },
-   {
-      type: "link",
-      img: "/support/Telegram.png",
-      imgDark: "/support/Telegram.png",
-      title: "Telegram",
-      message: "Entrar na comunidade",
-      url: "https://t.me/#"
    }
+   // {
+   //    type: "text",
+   //    img: "/support/Whatsapp.png",
+   //    imgDark: "/support/Whatsapp.png",
+   //    title: "WhatsApp",
+   //    message: "(+55) 11 99999-9999"
+   // },
+   // {
+   //    type: "text",
+   //    img: "/support/Email.png",
+   //    imgDark: "/support/Email.png",
+   //    title: "E-mail",
+   //    message: "test@example.com"
+   // },
+   // {
+   //    type: "link",
+   //    img: "/support/Telegram.png",
+   //    imgDark: "/support/Telegram.png",
+   //    title: "Telegram",
+   //    message: "Entrar na comunidade",
+   //    url: "https://t.me/#"
+   // }
 ];
 
 export function Help() {
