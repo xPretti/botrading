@@ -25,10 +25,10 @@ export function Header() {
                   <HeaderNav.Menu text="Soluções" activePath="/solutions" >
                      <HeaderNav.MenuLink
                         href="/solutions/scriptbot"
-                        title="ScriptBot v2.0"
+                        title="ScriptBot"
                      />
 
-                     <HeaderNav.MenuLink
+                     {/* <HeaderNav.MenuLink
                         href="https://botrading.gitbook.io/sb-plus/"
                         title="ScriptBot Plus v1.0"
                      />
@@ -36,7 +36,7 @@ export function Header() {
                      <HeaderNav.MenuLink
                         href="https://botrading.gitbook.io/sb-legacy/"
                         title="ScriptBot Legacy v2.0"
-                     />
+                     /> */}
                      <HeaderNav.MenuLink href="/solutions" title="Ver todas" />
                   </HeaderNav.Menu>
                   <HeaderNav.Link text="Central de Suporte" href="/help" />
@@ -48,9 +48,9 @@ export function Header() {
                      <HamburgerMenu.Link title="Home" href="/" icon={<HomeIcon width={21} />} />
                      <HamburgerMenu.Divider />
                      <HamburgerMenu.Accordion title="Soluções" icon={<Lightbulb width={21} />}>
-                        <HamburgerMenu.Link title="ScriptBot v2.0" href="https://sb.botrading.net" />
-                        <HamburgerMenu.Link title="ScriptBot Plus v1.0" href="https://botrading.gitbook.io/sb-plus/" />
-                        <HamburgerMenu.Link title="ScriptBot Legacy v2.0" href="https://botrading.gitbook.io/sb-legacy/" />
+                        <HamburgerMenu.Link title="ScriptBot" href="https://sb.botrading.net" />
+                        {/* <HamburgerMenu.Link title="ScriptBot Plus v1.0" href="https://botrading.gitbook.io/sb-plus/" /> */}
+                        {/* <HamburgerMenu.Link title="ScriptBot Legacy v2.0" href="https://botrading.gitbook.io/sb-legacy/" /> */}
                         <HamburgerMenu.Link title="Ver todas" href="/solutions" />
                      </HamburgerMenu.Accordion>
                      <HamburgerMenu.Divider />

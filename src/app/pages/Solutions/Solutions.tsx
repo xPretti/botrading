@@ -40,7 +40,7 @@ export function Solutions() {
                            title="ScriptBot"
                            description="Ferramente de automação de estratégias."
                            version="v2.0"
-                           link="https://sb.botrading.net"
+                           link="/solutions/scriptbot"
                            badges={[{ type: "new", Message: "NOVO" }, { type: "alpha", Message: "DEV-BUILD" }]} />
                      </li>
                      <li>
@@ -49,7 +49,9 @@ export function Solutions() {
                            title="ScriptBot Plus"
                            description="Ferramente de automação de estratégias."
                            version="v1.25"
-                           link="https://botrading.gitbook.io/sb-plus/" />
+                           link="https://botrading.gitbook.io/sb-plus/"
+                           badges={[{ type: "outdated", Message: "DESCONTINUADO" }]} />
+
                      </li>
                      <li>
                         <ProductCard

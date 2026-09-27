@@ -1,6 +1,7 @@
 import { Badge, type BadgeType } from '../../Badge/Badge';
 import { Divider } from "../../Divider/Divider";
 import styles from "./ProductCard.module.css";
+import { CustomNavLink } from '../../CustomNavLink/CustomNavLink';
 
 
 interface IProductCardProps {
@@ -36,7 +37,7 @@ export function ProductCard({ img, version, title, description, link, badges }: 
             <p className={styles.description}>{description}</p>
          </div>
          <div className={styles.footer}>
-            <a className={styles.button} href={link} target="_blank" rel="noreferrer">Conferir</a>
+            <CustomNavLink className={styles.button} to={link} rel="noreferrer">Conferir</CustomNavLink>
          </div>
       </div>
    );

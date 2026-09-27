@@ -65,7 +65,6 @@ const PLANS: PricePlan[] = [
 ];
 
 const FEATURES: PriceFeature[] = [
-   { label: "Uso em conta real", free: true, full: true },
    { label: "Todas as funções liberadas", free: true, full: true },
    { label: "Limite de faturamento", free: "R$300/mês", full: "Sem limite", fullHighlight: true },
    { label: "Painel de controle completo", free: true, full: true },
@@ -109,7 +108,7 @@ export function Prices() {
       <Section className={styles.prices} classNameContent={styles.pricesContent}>
          <SectionName title="Preços" />
          <SectionTitle title="Escolha seu plano" />
-         <SectionDescription text="Compare o teste gratuito com a licença completa e comece a operar." />
+         <SectionDescription text="Escolha o plano certo para voce." />
 
          <div className={styles.pricesCards}>
             {PLANS.map((plan) => (
