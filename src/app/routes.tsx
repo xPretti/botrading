@@ -4,6 +4,7 @@ import { NotFound } from './pages/NotFound/NotFound';
 import Home from './pages/Home/Home';
 import { Help } from './pages/Help/Help';
 import { Solutions } from './pages/Solutions/Solutions';
+import { ScriptBotPage } from './pages/Solutions/ScriptBot/ScriptBotPage';
 
 export const router = createBrowserRouter([
    {
@@ -27,6 +28,12 @@ export const router = createBrowserRouter([
          {
             path: '/solutions',
             element: <Solutions />,
+         },
+
+         // Solutions -> ScriptBot
+         {
+            path: '/solutions/scriptbot',
+            element: <ScriptBotPage />,
          },
       ],
    },
