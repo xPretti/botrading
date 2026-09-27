@@ -1,0 +1,43 @@
+.featureCard {
+   display: flex;
+   gap: 1rem;
+   margin: 5px;
+}
+
+/**
+ * Icon
+*/
+.featureCardIcon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--sl-color-gray-7);
+   border: 1px solid var(--sl-color-gray-6);
+   color: var(--sl-color-red-high);
+   border-radius: 8px;
+   width: fit-content;
+   height: fit-content;
+   min-height: 35px;
+   min-width: 35px;
+}
+
+/**
+ * Content
+*/
+.featureCardContent {
+   display: flex;
+   flex-direction: column;
+   gap: 0.625rem;
+}
+.featureCardContent h4 {
+   font-size: var(--sl-font-size-large);
+   font-weight: 700;
+   color: var(--sl-color-gray-1);
+}
+
+.featureCardContent p {
+   font-size: var(--sl-font-size-small);
+   font-family: var(--sl-font-family-base);
+   font-weight: 400;
+   color: var(--sl-color-gray-3);
+}

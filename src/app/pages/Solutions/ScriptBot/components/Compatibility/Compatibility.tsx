@@ -1,4 +1,4 @@
-import { Section } from "@/components/ui/Section/Section";
+import { Section } from "@/components/ui/Sections/Section/Section";
 import styles from "./Compatibility.module.css";
 
 export function Compatibility() {

@@ -1,4 +1,4 @@
-import { Section } from "@/components/ui/Section/Section";
+import { Section } from "@/components/ui/Sections/Section/Section";
 import styles from "./Help.module.css";
 import { PageTitle } from "@/components/ui/PageTitle/PageTitle";
 import { SupportCard } from "@/components/ui/Cards/SupportCard/SupportCard";

@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/Button/Button';
 import styles from './ScriptBotHero.module.css';
 import { useDevice } from '@/hooks/useDevice';
-import { Section } from '@/components/ui/Section/Section';
+import { Section } from '@/components/ui/Sections/Section/Section';
 
 export function ScriptBotHero() {
    const { isDesktop } = useDevice();

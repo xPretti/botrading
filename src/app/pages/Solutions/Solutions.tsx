@@ -1,6 +1,6 @@
 import { PageTitle } from "@/components/ui/PageTitle/PageTitle";
 import styles from "./Solutions.module.css";
-import { Section } from "@/components/ui/Section/Section";
+import { Section } from "@/components/ui/Sections/Section/Section";
 import { ProductCard } from "@/components/ui/Cards/ProductCard/ProductCard";
 import { Badge } from "@/components/ui/Badge/Badge";
 import { Divider } from "@/components/ui/Divider/Divider";

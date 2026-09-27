@@ -1,8 +1,9 @@
 .productSectionDescription {
-   text-align: left;
+   text-align: center;
    font-family: var(--sl-font-family-base);
    font-size: var(--sl-font-size-base);
    color: var(--sl-color-gray-3);
    font-weight: 500;
    margin-top: 0.5rem;
+   width: fit-content;
 }

@@ -1,6 +1,7 @@
 .compatibility {
    text-align: center;
-   padding: 1.2rem 0;
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
    background-color: var(--sl-color-section);
    border-top: 1px solid var(--sl-color-header-border);
 }
