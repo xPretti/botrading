@@ -1,0 +1,26 @@
+.prices {
+   padding-top: 70px;
+   padding-bottom: 70px;
+   border-top: 1px solid var(--sl-color-header-border);
+   background-color: var(--sl-color-section);
+   border-bottom: 1px solid var(--sl-color-header-border);
+}
+
+.pricesContent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Tablet */
+@media (min-width: 1024px) {
+   .pricesContent {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+   }
+   .pricesCards {
+      justify-content: space-between;
+   }
+}
