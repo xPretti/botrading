@@ -1,0 +1,7 @@
+.productSectionTitle {
+   text-align: left;
+   font-family: var(--sl-font-family-accent);
+   font-size: var(--sl-font-size-xxlarge);
+   color: var(--sl-color-white);
+   font-weight: 700;
+}

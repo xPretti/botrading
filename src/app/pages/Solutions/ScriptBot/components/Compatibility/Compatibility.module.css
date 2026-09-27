@@ -1,0 +1,11 @@
+.compatibility {
+   text-align: center;
+   padding: 1.2rem 0;
+   background-color: var(--sl-color-section);
+   border-top: 1px solid var(--sl-color-header-border);
+}
+
+.compatibilityText {
+   font-size: var(--sl-font-size-medium);
+   color: var(--sl-color-gray-2);
+}

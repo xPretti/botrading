@@ -1,0 +1,9 @@
+.compatibility {
+   padding: 70px 0;
+   border-top: 1px solid var(--sl-color-header-border);
+}
+
+.compatibilityText {
+   font-size: var(--sl-font-size-medium);
+   color: var(--sl-color-gray-2);
+}
